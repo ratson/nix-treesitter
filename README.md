@@ -116,7 +116,7 @@ nix build github:ratson/tree-sitter-parsers#tree-sitter-c
 - [objc](https://github.com/amaanq/tree-sitter-objc)
 - [ocaml](https://github.com/tree-sitter/tree-sitter-ocaml)
 - [odin](https://github.com/tree-sitter-grammars/tree-sitter-odin)
-- [org](https://github.com/milisims/tree-sitter-org)
+- [org](https://github.com/nvim-orgmode/tree-sitter-org)
 - [passwd](https://github.com/ath3/tree-sitter-passwd)
 - [pem](https://github.com/tree-sitter-grammars/tree-sitter-pem)
 - [perl](https://github.com/tree-sitter-perl/tree-sitter-perl/release)

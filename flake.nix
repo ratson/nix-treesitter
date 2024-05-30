@@ -65,7 +65,7 @@
       url = "github:nix-community/flakelight";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nixpkgs.url = "nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     tree-sitter-agda = {
       url = "github:tree-sitter/tree-sitter-agda";
       flake = false;
@@ -463,7 +463,7 @@
       flake = false;
     };
     tree-sitter-org = {
-      url = "github:milisims/tree-sitter-org";
+      url = "github:nvim-orgmode/tree-sitter-org";
       flake = false;
     };
     tree-sitter-passwd = {

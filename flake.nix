@@ -10,6 +10,8 @@
       packages =
         let
           locations = {
+            tree-sitter-asciidoc = "tree-sitter-asciidoc";
+            tree-sitter-asciidoc-inline = "tree-sitter-asciidoc_inline";
             tree-sitter-csv = "csv";
             tree-sitter-carbon = "utils/treesitter";
             tree-sitter-dtd = "dtd";
@@ -43,6 +45,7 @@
                     version = inputVersion input;
                   }))
             ((lib.filterAttrs (k: _: lib.hasPrefix "tree-sitter-" k) inputs) // {
+              tree-sitter-asciidoc-inline = inputs.tree-sitter-asciidoc;
               tree-sitter-dtd = inputs.tree-sitter-xml;
               tree-sitter-markdown-inline = inputs.tree-sitter-markdown;
               tree-sitter-ocaml-interface = inputs.tree-sitter-ocaml;
@@ -54,7 +57,8 @@
             });
         in
         grammars // {
-          default = { tree-sitter, outputs', ... }: tree-sitter.withPlugins (_:
+          default = { tree-sitter, vimPlugins, outputs', ... }: tree-sitter.withPlugins (_:
+            vimPlugins.nvim-treesitter.passthru.allGrammars ++
             tree-sitter.allGrammars ++
             lib.attrValues (lib.filterAttrs (k: _: lib.hasPrefix "tree-sitter-" k) outputs'.packages));
         };
@@ -76,6 +80,10 @@
     };
     tree-sitter-arduino = {
       url = "github:tree-sitter-grammars/tree-sitter-arduino";
+      flake = false;
+    };
+    tree-sitter-asciidoc = {
+      url = "github:cathaysia/tree-sitter-asciidoc";
       flake = false;
     };
     tree-sitter-astro = {
@@ -119,7 +127,7 @@
       flake = false;
     };
     tree-sitter-capnp = {
-      url = "github:amaanq/tree-sitter-capnp";
+      url = "github:tree-sitter-grammars/tree-sitter-capnp";
       flake = false;
     };
     tree-sitter-carbon = {
@@ -134,6 +142,10 @@
       url = "github:sogaiu/tree-sitter-clojure";
       flake = false;
     };
+    tree-sitter-comment = {
+      url = "github:stsewd/tree-sitter-comment";
+      flake = false;
+    };
     tree-sitter-commonlisp = {
       url = "github:tree-sitter-grammars/tree-sitter-commonlisp";
       flake = false;
@@ -146,6 +158,10 @@
       url = "github:corn-config/tree-sitter-corn";
       flake = false;
     };
+    tree-sitter-cpp = {
+      url = "github:tree-sitter/tree-sitter-cpp";
+      flake = false;
+    };
     tree-sitter-css = {
       url = "github:tree-sitter/tree-sitter-css";
       flake = false;
@@ -156,6 +172,14 @@
     };
     tree-sitter-cuda = {
       url = "github:tree-sitter-grammars/tree-sitter-cuda";
+      flake = false;
+    };
+    tree-sitter-cue = {
+      url = "github:eonpatapon/tree-sitter-cue";
+      flake = false;
+    };
+    tree-sitter-dart = {
+      url = "github:UserNobody14/tree-sitter-dart";
       flake = false;
     };
     tree-sitter-diff = {
@@ -210,12 +234,20 @@
       url = "github:tree-sitter-grammars/tree-sitter-firrtl";
       flake = false;
     };
+    tree-sitter-fish = {
+      url = "github:ram02z/tree-sitter-fish";
+      flake = false;
+    };
     tree-sitter-forester = {
       url = "github:kentookura/tree-sitter-forester";
       flake = false;
     };
     tree-sitter-func = {
       url = "github:tree-sitter-grammars/tree-sitter-func";
+      flake = false;
+    };
+    tree-sitter-gap = {
+      url = "github:gap-system/tree-sitter-gap";
       flake = false;
     };
     tree-sitter-git-config = {
@@ -298,6 +330,10 @@
       url = "github:tree-sitter/tree-sitter-haskell";
       flake = false;
     };
+    tree-sitter-haxe = {
+      url = "github:vantreeseba/tree-sitter-haxe";
+      flake = false;
+    };
     tree-sitter-hcl = {
       url = "github:tree-sitter-grammars/tree-sitter-hcl";
       flake = false;
@@ -316,6 +352,10 @@
     };
     tree-sitter-htmldjango = {
       url = "github:interdependence/tree-sitter-htmldjango";
+      flake = false;
+    };
+    tree-sitter-http = {
+      url = "github:rest-nvim/tree-sitter-http";
       flake = false;
     };
     tree-sitter-hurl = {
@@ -382,6 +422,10 @@
       url = "github:koto-lang/tree-sitter-koto";
       flake = false;
     };
+    tree-sitter-kotlin = {
+      url = "github:fwcd/tree-sitter-kotlin";
+      flake = false;
+    };
     tree-sitter-latex = {
       url = "github:latex-lsp/tree-sitter-latex";
       flake = false;
@@ -422,6 +466,10 @@
       url = "github:neomutt/tree-sitter-muttrc";
       flake = false;
     };
+    tree-sitter-nginx = {
+      url = "gitlab:joncoole/tree-sitter-nginx";
+      flake = false;
+    };
     tree-sitter-nickel = {
       url = "github:nickel-lang/tree-sitter-nickel";
       flake = false;
@@ -440,6 +488,10 @@
     };
     tree-sitter-norg = {
       url = "github:nvim-neorg/tree-sitter-norg";
+      flake = false;
+    };
+    tree-sitter-nu = {
+      url = "github:nushell/tree-sitter-nu";
       flake = false;
     };
     tree-sitter-numbat = {
@@ -482,6 +534,10 @@
       url = "github:tree-sitter/tree-sitter-php";
       flake = false;
     };
+    tree-sitter-plume = {
+      url = "github:plume-lang/tree-sitter-plume";
+      flake = false;
+    };
     tree-sitter-po = {
       url = "github:erasin/tree-sitter-po";
       flake = false;
@@ -496,6 +552,10 @@
     };
     tree-sitter-pony = {
       url = "github:tree-sitter-grammars/tree-sitter-pony";
+      flake = false;
+    };
+    tree-sitter-powershell = {
+      url = "github:airbus-cert/tree-sitter-powershell";
       flake = false;
     };
     tree-sitter-printf = {
@@ -534,12 +594,20 @@
       url = "github:tree-sitter-grammars/tree-sitter-qmldir";
       flake = false;
     };
+    tree-sitter-qmljs = {
+      url = "github:yuja/tree-sitter-qmljs";
+      flake = false;
+    };
     tree-sitter-query = {
-      url = "github:nvim-treesitter/tree-sitter-query";
+      url = "github:tree-sitter-grammars/tree-sitter-query";
       flake = false;
     };
     tree-sitter-r = {
       url = "github:r-lib/tree-sitter-r";
+      flake = false;
+    };
+    tree-sitter-racket = {
+      url = "github:6cdh/tree-sitter-racket";
       flake = false;
     };
     tree-sitter-rasi = {
@@ -586,6 +654,10 @@
       url = "github:tree-sitter/tree-sitter-scala";
       flake = false;
     };
+    tree-sitter-sdml = {
+      url = "github:sdm-lang/tree-sitter-sdml";
+      flake = false;
+    };
     tree-sitter-slang = {
       url = "github:tree-sitter-grammars/tree-sitter-slang";
       flake = false;
@@ -600,6 +672,10 @@
     };
     tree-sitter-squirrel = {
       url = "github:tree-sitter-grammars/tree-sitter-squirrel";
+      flake = false;
+    };
+    tree-sitter-ssh-client-config = {
+      url = "github:metio/tree-sitter-ssh-client-config";
       flake = false;
     };
     tree-sitter-ssh-config = {

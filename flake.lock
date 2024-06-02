@@ -83,6 +83,7 @@
         "tree-sitter-firrtl": "tree-sitter-firrtl",
         "tree-sitter-fish": "tree-sitter-fish",
         "tree-sitter-forester": "tree-sitter-forester",
+        "tree-sitter-fsharp": "tree-sitter-fsharp",
         "tree-sitter-func": "tree-sitter-func",
         "tree-sitter-gap": "tree-sitter-gap",
         "tree-sitter-git-config": "tree-sitter-git-config",
@@ -195,6 +196,7 @@
         "tree-sitter-ssh-config": "tree-sitter-ssh-config",
         "tree-sitter-starlark": "tree-sitter-starlark",
         "tree-sitter-strace": "tree-sitter-strace",
+        "tree-sitter-styled": "tree-sitter-styled",
         "tree-sitter-svelte": "tree-sitter-svelte",
         "tree-sitter-sxhkdrc": "tree-sitter-sxhkdrc",
         "tree-sitter-tablegen": "tree-sitter-tablegen",
@@ -275,11 +277,11 @@
     "tree-sitter-asciidoc": {
       "flake": false,
       "locked": {
-        "lastModified": 1717210655,
-        "narHash": "sha256-FaMIoSPiUCy1CfvtDCVzr6jOKMZYaMtJnfVPzxqJ22Y=",
+        "lastModified": 1717338347,
+        "narHash": "sha256-YdxDtujXqeoaizRz+TXOexv69wFdrhCW5mhnR3QRtIo=",
         "owner": "cathaysia",
         "repo": "tree-sitter-asciidoc",
-        "rev": "2d4e037132a9dcf1e666ab5cad039496511d11a4",
+        "rev": "104234841132a87afb95dd79e96636cc118bf90b",
         "type": "github"
       },
       "original": {
@@ -909,6 +911,22 @@
       "original": {
         "owner": "kentookura",
         "repo": "tree-sitter-forester",
+        "type": "github"
+      }
+    },
+    "tree-sitter-fsharp": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717316884,
+        "narHash": "sha256-MBI4QOcnX81moMKqNTSfomQ4mHWqr/IMKRc6YD4nfqI=",
+        "owner": "ionide",
+        "repo": "tree-sitter-fsharp",
+        "rev": "d9ec73b74a7b7eef01f9d57714459efb91b3bb1f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ionide",
+        "repo": "tree-sitter-fsharp",
         "type": "github"
       }
     },
@@ -2703,6 +2721,22 @@
       "original": {
         "owner": "sigmaSd",
         "repo": "tree-sitter-strace",
+        "type": "github"
+      }
+    },
+    "tree-sitter-styled": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717256857,
+        "narHash": "sha256-pcvt3ow6rVYCYbcVzIz3FGWpqoVCPX7zuOj3vKpkOfU=",
+        "owner": "mskelton",
+        "repo": "tree-sitter-styled",
+        "rev": "65835cca33a5f033bcde580ed66cde01c1fabbbe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mskelton",
+        "repo": "tree-sitter-styled",
         "type": "github"
       }
     },

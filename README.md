@@ -23,8 +23,8 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | agda              | [2024-02-15](https://github.com/tree-sitter/tree-sitter-agda)                   |
 | angular           | [2024-05-07](https://github.com/dlvandenberg/tree-sitter-angular)               |
 | arduino           | [2024-06-02](https://github.com/tree-sitter-grammars/tree-sitter-arduino)       |
-| asciidoc          | [2024-06-01](https://github.com/cathaysia/tree-sitter-asciidoc)                 |
-| asciidoc-inline   | [2024-06-01](https://github.com/cathaysia/tree-sitter-asciidoc)                 |
+| asciidoc          | [2024-06-02](https://github.com/cathaysia/tree-sitter-asciidoc)                 |
+| asciidoc-inline   | [2024-06-02](https://github.com/cathaysia/tree-sitter-asciidoc)                 |
 | astro             | [2024-04-23](https://github.com/virchau13/tree-sitter-astro)                    |
 | bash              | [2024-05-06](https://github.com/tree-sitter/tree-sitter-bash)                   |
 | beancount         | [2024-03-29](https://github.com/polarmutex/tree-sitter-beancount)               |
@@ -65,6 +65,7 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | firrtl            | [2024-04-20](https://github.com/tree-sitter-grammars/tree-sitter-firrtl)        |
 | fish              | [2024-04-02](https://github.com/ram02z/tree-sitter-fish)                        |
 | forester          | [2024-02-11](https://github.com/kentookura/tree-sitter-forester)                |
+| fsharp            | [2024-06-02](https://github.com/ionide/tree-sitter-fsharp)                      |
 | func              | [2024-04-27](https://github.com/tree-sitter-grammars/tree-sitter-func)          |
 | gap               | [2024-05-26](https://github.com/gap-system/tree-sitter-gap)                     |
 | git-config        | [2023-09-26](https://github.com/the-mikedavis/tree-sitter-git-config)           |
@@ -181,6 +182,7 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | ssh-config        | [2024-04-19](https://github.com/ObserverOfTime/tree-sitter-ssh-config)          |
 | starlark          | [2024-05-25](https://github.com/tree-sitter-grammars/tree-sitter-starlark)      |
 | strace            | [2023-10-29](https://github.com/sigmaSd/tree-sitter-strace)                     |
+| styled            | [2024-06-01](https://github.com/mskelton/tree-sitter-styled)                    |
 | svelte            | [2024-04-10](https://github.com/tree-sitter-grammars/tree-sitter-svelte)        |
 | sxhkdrc           | [2022-08-31](https://github.com/RaafatTurki/tree-sitter-sxhkdrc)                |
 | tablegen          | [2024-05-05](https://github.com/tree-sitter-grammars/tree-sitter-tablegen)      |

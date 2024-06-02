@@ -9,6 +9,7 @@
 
       packages =
         let
+          inherit (lib) filterAttrs hasAttr hasPrefix listToAttrs nameValuePair;
           locations = {
             tree-sitter-asciidoc = "tree-sitter-asciidoc";
             tree-sitter-asciidoc-inline = "tree-sitter-asciidoc_inline";
@@ -28,8 +29,8 @@
           ];
           inputVersion = input: "${builtins.substring 0 8 input.lastModifiedDate}.${input.shortRev}";
           grammars = lib.mapAttrs'
-            (k: input: lib.nameValuePair k (pkgs:
-              if lib.hasAttr k pkgs.tree-sitter-grammars then
+            (k: input: nameValuePair k (pkgs:
+              if hasAttr k pkgs.tree-sitter-grammars then
                 pkgs.tree-sitter-grammars.${k}.overrideAttrs
                   (_: {
                     src = input;
@@ -39,12 +40,12 @@
                 pkgs.tree-sitter.buildGrammar
                   {
                     language = k;
-                    location = if lib.hasAttr k locations then locations.${k} else null;
+                    location = if hasAttr k locations then locations.${k} else null;
                     generate = lib.elem (lib.removePrefix "tree-sitter-" k) needGenerate;
                     src = input;
                     version = inputVersion input;
                   }))
-            ((lib.filterAttrs (k: _: lib.hasPrefix "tree-sitter-" k) inputs) // {
+            ((filterAttrs (k: _: hasPrefix "tree-sitter-" k) inputs) // {
               tree-sitter-asciidoc-inline = inputs.tree-sitter-asciidoc;
               tree-sitter-dtd = inputs.tree-sitter-xml;
               tree-sitter-markdown-inline = inputs.tree-sitter-markdown;
@@ -57,10 +58,23 @@
             });
         in
         grammars // {
-          default = { tree-sitter, vimPlugins, outputs', ... }: tree-sitter.withPlugins (_:
-            vimPlugins.nvim-treesitter.passthru.allGrammars ++
-            tree-sitter.allGrammars ++
-            lib.attrValues (lib.filterAttrs (k: _: lib.hasPrefix "tree-sitter-" k) outputs'.packages));
+          default = { tree-sitter, vimPlugins, outputs', ... }:
+            let
+              revTs = listToAttrs (map (x: nameValuePair x.src.rev x) tree-sitter.allGrammars);
+              revVim = listToAttrs (map (x: nameValuePair x.src.rev x) vimPlugins.nvim-treesitter.passthru.allGrammars);
+              selfGrammars = lib.attrValues (filterAttrs (k: v: hasPrefix "tree-sitter-" k) outputs'.packages);
+              finalGrammars = map
+                (x:
+                  let k = x.src.rev; in
+                  if hasAttr k revTs then revTs.${k}
+                  else if hasAttr k revVim then revVim.${k}
+                  else x)
+                selfGrammars;
+            in
+            tree-sitter.withPlugins (_:
+              vimPlugins.nvim-treesitter.passthru.allGrammars ++
+              tree-sitter.allGrammars ++
+              finalGrammars);
         };
     });
 
@@ -240,6 +254,10 @@
     };
     tree-sitter-forester = {
       url = "github:kentookura/tree-sitter-forester";
+      flake = false;
+    };
+    tree-sitter-fsharp = {
+      url = "github:ionide/tree-sitter-fsharp";
       flake = false;
     };
     tree-sitter-func = {
@@ -688,6 +706,10 @@
     };
     tree-sitter-strace = {
       url = "github:sigmaSd/tree-sitter-strace";
+      flake = false;
+    };
+    tree-sitter-styled = {
+      url = "github:mskelton/tree-sitter-styled";
       flake = false;
     };
     tree-sitter-svelte = {

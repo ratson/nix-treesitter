@@ -5,18 +5,19 @@
 - Build `default` package for all tree-sitter parsers,
 
 ```sh
-nix build github:ratson/tree-sitter-parsers
+nix build github:ratson/nix-treesitter
 ```
 
 - Build individual grammar, e.g. C
 
 ```sh
-nix build github:ratson/tree-sitter-parsers#tree-sitter-c
+nix build github:ratson/nix-treesitter#tree-sitter-c
 ```
 
 ## Supported languages
 
 <!--grammars-->
+
 | Grammar           | Last Modified                                                                   |
 | ----------------- | ------------------------------------------------------------------------------- |
 | agda              | [2024-02-15](https://github.com/tree-sitter/tree-sitter-agda)                   |
@@ -210,4 +211,5 @@ nix build github:ratson/tree-sitter-parsers#tree-sitter-c
 | yasnippet         | [2024-05-30](https://github.com/nverno/tree-sitter-yasnippet)                   |
 | yuck              | [2024-05-05](https://github.com/Philipp-M/tree-sitter-yuck)                     |
 | zig               | [2023-04-25](https://github.com/maxxnino/tree-sitter-zig)                       |
+
 <!--grammars-->

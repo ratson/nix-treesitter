@@ -259,11 +259,11 @@
     "tree-sitter-arduino": {
       "flake": false,
       "locked": {
-        "lastModified": 1714892846,
-        "narHash": "sha256-nA/4SRlXfm8hMZw/GOQFAxzoPNAzVP0cCnHLc1ZawXU=",
+        "lastModified": 1717316128,
+        "narHash": "sha256-iccyGSsbNDhvkrT20/bqx9s5tkghl6DONzJz5UEtTJ8=",
         "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-arduino",
-        "rev": "babb6d4da69b359bbb80adbf1fe39c0da9175210",
+        "rev": "afb34b2c65f507932c5c6ddbf0d5a9ca6a772f2f",
         "type": "github"
       },
       "original": {
@@ -275,11 +275,11 @@
     "tree-sitter-asciidoc": {
       "flake": false,
       "locked": {
-        "lastModified": 1717137629,
-        "narHash": "sha256-mod9YiT4dnYf2r7NPP3e2JR2w/3SlM0iz61dWwxbZM8=",
+        "lastModified": 1717210655,
+        "narHash": "sha256-FaMIoSPiUCy1CfvtDCVzr6jOKMZYaMtJnfVPzxqJ22Y=",
         "owner": "cathaysia",
         "repo": "tree-sitter-asciidoc",
-        "rev": "1ed6a98ea7991295c7313425218831626db6d40e",
+        "rev": "2d4e037132a9dcf1e666ab5cad039496511d11a4",
         "type": "github"
       },
       "original": {
@@ -403,11 +403,11 @@
     "tree-sitter-c": {
       "flake": false,
       "locked": {
-        "lastModified": 1716622396,
-        "narHash": "sha256-ucbHLS2xyGo1uyKZv/K1HNXuMo4GpTY327cgdVS9F3c=",
+        "lastModified": 1717181321,
+        "narHash": "sha256-uvvARjD4729GO8vpmrhAzheEQ3oz7LYmF8awdyS2/Rw=",
         "owner": "tree-sitter",
         "repo": "tree-sitter-c",
-        "rev": "00ed08f1a6c18141bfd7a81638e4d239a0bb55cc",
+        "rev": "deca017a554045b4c203e7ddff39ae64ff05e071",
         "type": "github"
       },
       "original": {
@@ -467,11 +467,11 @@
     "tree-sitter-carbon": {
       "flake": false,
       "locked": {
-        "lastModified": 1717107283,
-        "narHash": "sha256-zxj+izhj/z+tyu/tvXt3xFdEqgLuiVK3f//gvvReBeg=",
+        "lastModified": 1717219004,
+        "narHash": "sha256-XOK7pX+Fpt1ckbQOdn53BRjNC6u17V3cbEqmgx0sSns=",
         "owner": "carbon-language",
         "repo": "carbon-lang",
-        "rev": "ed6d2baa99e50204f0111b188a1e92c2ff54e7f5",
+        "rev": "e34e2402633e2d3113385f242258666eeb8bfeed",
         "type": "github"
       },
       "original": {
@@ -2469,11 +2469,11 @@
     "tree-sitter-rescript": {
       "flake": false,
       "locked": {
-        "lastModified": 1711299590,
-        "narHash": "sha256-krzKIZAhlXQkawO3TGy3Oo5L9d50yumfkUfFjfu+Jz8=",
+        "lastModified": 1717287125,
+        "narHash": "sha256-DTO+AMzjq/+n4zJNkTyjiiIlvAo8NlDQ7gbwrFYt0Os=",
         "owner": "rescript-lang",
         "repo": "tree-sitter-rescript",
-        "rev": "17b0805c9eef8e9fc451a33cddc7156dcf20a409",
+        "rev": "5e2a44a9d886b0a509f5bfd0437d33b4871fbac5",
         "type": "github"
       },
       "original": {

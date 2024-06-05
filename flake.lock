@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1716813191,
-        "narHash": "sha256-j3HyrKbPu7kd4+iM2tMksDjKMLbhXo9cQ54WN5QmZ7k=",
+        "lastModified": 1717418073,
+        "narHash": "sha256-Qv1U8eResWklZi+iprnuGMCD6xwqyJ5Pcb++MQf7LJU=",
         "owner": "nix-community",
         "repo": "flakelight",
-        "rev": "5983f517f942b8ca177b678f3f102c8b56ab791c",
+        "rev": "567c9190ed34b7acb267ac12358f7fe24b1c960a",
         "type": "github"
       },
       "original": {
@@ -22,11 +22,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1717112898,
-        "narHash": "sha256-7R2ZvOnvd9h8fDd65p0JnB7wXfUvreox3xFdYWd1BnY=",
+        "lastModified": 1717459389,
+        "narHash": "sha256-I8/plBsua4/NZ5bKgj+z7/ThiWuud1YFwLsn1QQ5PgE=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6132b0f6e344ce2fe34fc051b72fb46e34f668e0",
+        "rev": "3b01abcc24846ae49957b30f4345bab4b3f1d14b",
         "type": "github"
       },
       "original": {
@@ -40,10 +40,12 @@
       "inputs": {
         "flakelight": "flakelight",
         "nixpkgs": "nixpkgs",
+        "tree-sitter-adl": "tree-sitter-adl",
         "tree-sitter-agda": "tree-sitter-agda",
         "tree-sitter-angular": "tree-sitter-angular",
         "tree-sitter-arduino": "tree-sitter-arduino",
         "tree-sitter-asciidoc": "tree-sitter-asciidoc",
+        "tree-sitter-asm": "tree-sitter-asm",
         "tree-sitter-astro": "tree-sitter-astro",
         "tree-sitter-bash": "tree-sitter-bash",
         "tree-sitter-beancount": "tree-sitter-beancount",
@@ -51,33 +53,42 @@
         "tree-sitter-bicep": "tree-sitter-bicep",
         "tree-sitter-bitbake": "tree-sitter-bitbake",
         "tree-sitter-blade": "tree-sitter-blade",
+        "tree-sitter-bp": "tree-sitter-bp",
         "tree-sitter-c": "tree-sitter-c",
         "tree-sitter-c-sharp": "tree-sitter-c-sharp",
         "tree-sitter-cairo": "tree-sitter-cairo",
         "tree-sitter-capnp": "tree-sitter-capnp",
         "tree-sitter-carbon": "tree-sitter-carbon",
+        "tree-sitter-cel": "tree-sitter-cel",
         "tree-sitter-chatito": "tree-sitter-chatito",
         "tree-sitter-clojure": "tree-sitter-clojure",
+        "tree-sitter-cmake": "tree-sitter-cmake",
         "tree-sitter-comment": "tree-sitter-comment",
         "tree-sitter-commonlisp": "tree-sitter-commonlisp",
         "tree-sitter-corn": "tree-sitter-corn",
         "tree-sitter-cpon": "tree-sitter-cpon",
         "tree-sitter-cpp": "tree-sitter-cpp",
+        "tree-sitter-crystal": "tree-sitter-crystal",
         "tree-sitter-css": "tree-sitter-css",
         "tree-sitter-csv": "tree-sitter-csv",
         "tree-sitter-cuda": "tree-sitter-cuda",
         "tree-sitter-cue": "tree-sitter-cue",
+        "tree-sitter-d": "tree-sitter-d",
         "tree-sitter-dart": "tree-sitter-dart",
+        "tree-sitter-dbml": "tree-sitter-dbml",
         "tree-sitter-diff": "tree-sitter-diff",
         "tree-sitter-dockerfile": "tree-sitter-dockerfile",
         "tree-sitter-dotbox": "tree-sitter-dotbox",
         "tree-sitter-doxygen": "tree-sitter-doxygen",
+        "tree-sitter-edoc": "tree-sitter-edoc",
+        "tree-sitter-eiffel": "tree-sitter-eiffel",
         "tree-sitter-elixir": "tree-sitter-elixir",
         "tree-sitter-elm": "tree-sitter-elm",
         "tree-sitter-elvish": "tree-sitter-elvish",
         "tree-sitter-embedded-template": "tree-sitter-embedded-template",
         "tree-sitter-erlang": "tree-sitter-erlang",
         "tree-sitter-esdl": "tree-sitter-esdl",
+        "tree-sitter-exograph": "tree-sitter-exograph",
         "tree-sitter-fennel": "tree-sitter-fennel",
         "tree-sitter-fidl": "tree-sitter-fidl",
         "tree-sitter-firrtl": "tree-sitter-firrtl",
@@ -86,6 +97,8 @@
         "tree-sitter-fsharp": "tree-sitter-fsharp",
         "tree-sitter-func": "tree-sitter-func",
         "tree-sitter-gap": "tree-sitter-gap",
+        "tree-sitter-gas": "tree-sitter-gas",
+        "tree-sitter-git-commit": "tree-sitter-git-commit",
         "tree-sitter-git-config": "tree-sitter-git-config",
         "tree-sitter-git-rebase": "tree-sitter-git-rebase",
         "tree-sitter-gitattributes": "tree-sitter-gitattributes",
@@ -99,6 +112,7 @@
         "tree-sitter-go": "tree-sitter-go",
         "tree-sitter-gosum": "tree-sitter-gosum",
         "tree-sitter-gotmpl": "tree-sitter-gotmpl",
+        "tree-sitter-gowork": "tree-sitter-gowork",
         "tree-sitter-gpg": "tree-sitter-gpg",
         "tree-sitter-gritql": "tree-sitter-gritql",
         "tree-sitter-groovy": "tree-sitter-groovy",
@@ -110,11 +124,13 @@
         "tree-sitter-hcl": "tree-sitter-hcl",
         "tree-sitter-heex": "tree-sitter-heex",
         "tree-sitter-hlsl": "tree-sitter-hlsl",
+        "tree-sitter-hosts": "tree-sitter-hosts",
         "tree-sitter-html": "tree-sitter-html",
         "tree-sitter-htmldjango": "tree-sitter-htmldjango",
         "tree-sitter-http": "tree-sitter-http",
         "tree-sitter-hurl": "tree-sitter-hurl",
         "tree-sitter-hyprlang": "tree-sitter-hyprlang",
+        "tree-sitter-iex": "tree-sitter-iex",
         "tree-sitter-ini": "tree-sitter-ini",
         "tree-sitter-inko": "tree-sitter-inko",
         "tree-sitter-ispc": "tree-sitter-ispc",
@@ -126,19 +142,33 @@
         "tree-sitter-jsonc": "tree-sitter-jsonc",
         "tree-sitter-juice": "tree-sitter-juice",
         "tree-sitter-julia": "tree-sitter-julia",
+        "tree-sitter-kanata": "tree-sitter-kanata",
+        "tree-sitter-kcl": "tree-sitter-kcl",
         "tree-sitter-kconfig": "tree-sitter-kconfig",
         "tree-sitter-kdl": "tree-sitter-kdl",
+        "tree-sitter-kittyconf": "tree-sitter-kittyconf",
         "tree-sitter-kotlin": "tree-sitter-kotlin",
         "tree-sitter-koto": "tree-sitter-koto",
         "tree-sitter-latex": "tree-sitter-latex",
+        "tree-sitter-ld": "tree-sitter-ld",
+        "tree-sitter-ldif": "tree-sitter-ldif",
+        "tree-sitter-lean": "tree-sitter-lean",
         "tree-sitter-linkerscript": "tree-sitter-linkerscript",
+        "tree-sitter-liquid": "tree-sitter-liquid",
+        "tree-sitter-liquidsoap": "tree-sitter-liquidsoap",
+        "tree-sitter-llvm-mir": "tree-sitter-llvm-mir",
+        "tree-sitter-log": "tree-sitter-log",
+        "tree-sitter-lpf": "tree-sitter-lpf",
         "tree-sitter-lua": "tree-sitter-lua",
         "tree-sitter-luadoc": "tree-sitter-luadoc",
         "tree-sitter-luap": "tree-sitter-luap",
         "tree-sitter-luau": "tree-sitter-luau",
+        "tree-sitter-markdoc": "tree-sitter-markdoc",
         "tree-sitter-markdown": "tree-sitter-markdown",
         "tree-sitter-mermaid": "tree-sitter-mermaid",
         "tree-sitter-meson": "tree-sitter-meson",
+        "tree-sitter-mojo": "tree-sitter-mojo",
+        "tree-sitter-move": "tree-sitter-move",
         "tree-sitter-muttrc": "tree-sitter-muttrc",
         "tree-sitter-nginx": "tree-sitter-nginx",
         "tree-sitter-nickel": "tree-sitter-nickel",
@@ -152,11 +182,16 @@
         "tree-sitter-objc": "tree-sitter-objc",
         "tree-sitter-ocaml": "tree-sitter-ocaml",
         "tree-sitter-odin": "tree-sitter-odin",
+        "tree-sitter-ohm": "tree-sitter-ohm",
+        "tree-sitter-opencl": "tree-sitter-opencl",
+        "tree-sitter-openscad": "tree-sitter-openscad",
         "tree-sitter-org": "tree-sitter-org",
         "tree-sitter-passwd": "tree-sitter-passwd",
         "tree-sitter-pem": "tree-sitter-pem",
         "tree-sitter-perl": "tree-sitter-perl",
+        "tree-sitter-pest": "tree-sitter-pest",
         "tree-sitter-php": "tree-sitter-php",
+        "tree-sitter-pkl": "tree-sitter-pkl",
         "tree-sitter-plume": "tree-sitter-plume",
         "tree-sitter-po": "tree-sitter-po",
         "tree-sitter-pod": "tree-sitter-pod",
@@ -166,6 +201,7 @@
         "tree-sitter-printf": "tree-sitter-printf",
         "tree-sitter-properties": "tree-sitter-properties",
         "tree-sitter-proto": "tree-sitter-proto",
+        "tree-sitter-protobuf": "tree-sitter-protobuf",
         "tree-sitter-puppet": "tree-sitter-puppet",
         "tree-sitter-pymanifest": "tree-sitter-pymanifest",
         "tree-sitter-python": "tree-sitter-python",
@@ -176,21 +212,27 @@
         "tree-sitter-query": "tree-sitter-query",
         "tree-sitter-r": "tree-sitter-r",
         "tree-sitter-racket": "tree-sitter-racket",
+        "tree-sitter-ralph": "tree-sitter-ralph",
         "tree-sitter-rasi": "tree-sitter-rasi",
         "tree-sitter-re2c": "tree-sitter-re2c",
         "tree-sitter-readline": "tree-sitter-readline",
         "tree-sitter-regex": "tree-sitter-regex",
         "tree-sitter-requirements": "tree-sitter-requirements",
         "tree-sitter-rescript": "tree-sitter-rescript",
+        "tree-sitter-rifleconfig": "tree-sitter-rifleconfig",
         "tree-sitter-ron": "tree-sitter-ron",
         "tree-sitter-rst": "tree-sitter-rst",
+        "tree-sitter-rstml": "tree-sitter-rstml",
         "tree-sitter-ruby": "tree-sitter-ruby",
         "tree-sitter-rust": "tree-sitter-rust",
         "tree-sitter-scala": "tree-sitter-scala",
+        "tree-sitter-scheme": "tree-sitter-scheme",
         "tree-sitter-sdml": "tree-sitter-sdml",
         "tree-sitter-slang": "tree-sitter-slang",
         "tree-sitter-slint": "tree-sitter-slint",
         "tree-sitter-smali": "tree-sitter-smali",
+        "tree-sitter-sml": "tree-sitter-sml",
+        "tree-sitter-spicedb": "tree-sitter-spicedb",
         "tree-sitter-squirrel": "tree-sitter-squirrel",
         "tree-sitter-ssh-client-config": "tree-sitter-ssh-client-config",
         "tree-sitter-ssh-config": "tree-sitter-ssh-config",
@@ -198,32 +240,60 @@
         "tree-sitter-strace": "tree-sitter-strace",
         "tree-sitter-styled": "tree-sitter-styled",
         "tree-sitter-svelte": "tree-sitter-svelte",
+        "tree-sitter-sway": "tree-sitter-sway",
         "tree-sitter-sxhkdrc": "tree-sitter-sxhkdrc",
         "tree-sitter-tablegen": "tree-sitter-tablegen",
         "tree-sitter-tact": "tree-sitter-tact",
+        "tree-sitter-task": "tree-sitter-task",
         "tree-sitter-tcl": "tree-sitter-tcl",
+        "tree-sitter-teal": "tree-sitter-teal",
         "tree-sitter-thrift": "tree-sitter-thrift",
         "tree-sitter-tlaplus": "tree-sitter-tlaplus",
         "tree-sitter-tmux": "tree-sitter-tmux",
         "tree-sitter-toml": "tree-sitter-toml",
         "tree-sitter-typescript": "tree-sitter-typescript",
+        "tree-sitter-typespec": "tree-sitter-typespec",
+        "tree-sitter-typst": "tree-sitter-typst",
         "tree-sitter-udev": "tree-sitter-udev",
+        "tree-sitter-uiua": "tree-sitter-uiua",
         "tree-sitter-ungrammar": "tree-sitter-ungrammar",
         "tree-sitter-uxntal": "tree-sitter-uxntal",
         "tree-sitter-v": "tree-sitter-v",
         "tree-sitter-vala": "tree-sitter-vala",
         "tree-sitter-vento": "tree-sitter-vento",
         "tree-sitter-verilog": "tree-sitter-verilog",
+        "tree-sitter-vhdl": "tree-sitter-vhdl",
         "tree-sitter-vim": "tree-sitter-vim",
         "tree-sitter-vimdoc": "tree-sitter-vimdoc",
         "tree-sitter-vue": "tree-sitter-vue",
+        "tree-sitter-wat": "tree-sitter-wat",
         "tree-sitter-wgsl-bevy": "tree-sitter-wgsl-bevy",
+        "tree-sitter-wing": "tree-sitter-wing",
+        "tree-sitter-wit": "tree-sitter-wit",
         "tree-sitter-xcompose": "tree-sitter-xcompose",
+        "tree-sitter-xit": "tree-sitter-xit",
         "tree-sitter-xml": "tree-sitter-xml",
+        "tree-sitter-xtc": "tree-sitter-xtc",
         "tree-sitter-yaml": "tree-sitter-yaml",
         "tree-sitter-yasnippet": "tree-sitter-yasnippet",
         "tree-sitter-yuck": "tree-sitter-yuck",
         "tree-sitter-zig": "tree-sitter-zig"
+      }
+    },
+    "tree-sitter-adl": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1712118994,
+        "narHash": "sha256-gYEtTjjy8qClYg4+ZnKwNUWMxKTc3sUXQdsVCwB7H6w=",
+        "owner": "adl-lang",
+        "repo": "tree-sitter-adl",
+        "rev": "2787d04beadfbe154d3f2da6e98dc45a1b134bbf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "adl-lang",
+        "repo": "tree-sitter-adl",
+        "type": "github"
       }
     },
     "tree-sitter-agda": {
@@ -277,16 +347,32 @@
     "tree-sitter-asciidoc": {
       "flake": false,
       "locked": {
-        "lastModified": 1717338347,
-        "narHash": "sha256-YdxDtujXqeoaizRz+TXOexv69wFdrhCW5mhnR3QRtIo=",
+        "lastModified": 1717669286,
+        "narHash": "sha256-gVa3Nvrt0YljwcRXmBHHCqczeap4AvqJx49lkGML8ZU=",
         "owner": "cathaysia",
         "repo": "tree-sitter-asciidoc",
-        "rev": "104234841132a87afb95dd79e96636cc118bf90b",
+        "rev": "19e034e2b312f1e0ec25eca629f95a6cef34f988",
         "type": "github"
       },
       "original": {
         "owner": "cathaysia",
         "repo": "tree-sitter-asciidoc",
+        "type": "github"
+      }
+    },
+    "tree-sitter-asm": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1713961952,
+        "narHash": "sha256-xmuusYIDpttr97ZJrouW0VB02pZG8usQ9kMsARRHeJI=",
+        "owner": "RubixDev",
+        "repo": "tree-sitter-asm",
+        "rev": "b0306e9bb2ebe01c6562f1aef265cc42ccc53070",
+        "type": "github"
+      },
+      "original": {
+        "owner": "RubixDev",
+        "repo": "tree-sitter-asm",
         "type": "github"
       }
     },
@@ -402,6 +488,22 @@
         "type": "github"
       }
     },
+    "tree-sitter-bp": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1715615167,
+        "narHash": "sha256-h9T8tfS2K85N9NLwYj6tu2MHPj4YyG/UBYoezfWuEyI=",
+        "owner": "ambroisie",
+        "repo": "tree-sitter-bp",
+        "rev": "2326d709fb9cf73cf124fdbc803c267f851721a4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ambroisie",
+        "repo": "tree-sitter-bp",
+        "type": "github"
+      }
+    },
     "tree-sitter-c": {
       "flake": false,
       "locked": {
@@ -469,16 +571,32 @@
     "tree-sitter-carbon": {
       "flake": false,
       "locked": {
-        "lastModified": 1717219004,
-        "narHash": "sha256-XOK7pX+Fpt1ckbQOdn53BRjNC6u17V3cbEqmgx0sSns=",
+        "lastModified": 1717634443,
+        "narHash": "sha256-uUa9z7wo94GHdJAoOq0ZtQiqQQe7UDYrJy6VxWwRwuE=",
         "owner": "carbon-language",
         "repo": "carbon-lang",
-        "rev": "e34e2402633e2d3113385f242258666eeb8bfeed",
+        "rev": "9a11e977b374d164e2416a318f88b2dbc90104e0",
         "type": "github"
       },
       "original": {
         "owner": "carbon-language",
         "repo": "carbon-lang",
+        "type": "github"
+      }
+    },
+    "tree-sitter-cel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1707863004,
+        "narHash": "sha256-Fyq56kzu1bL44QhrF3ZnKWgsoPRh3tjTRi2CynNQGfw=",
+        "owner": "bufbuild",
+        "repo": "tree-sitter-cel",
+        "rev": "df0585025e6f50cdb07347f5009ae3f47c652890",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bufbuild",
+        "repo": "tree-sitter-cel",
         "type": "github"
       }
     },
@@ -511,6 +629,22 @@
       "original": {
         "owner": "sogaiu",
         "repo": "tree-sitter-clojure",
+        "type": "github"
+      }
+    },
+    "tree-sitter-cmake": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717577312,
+        "narHash": "sha256-asJ4BDARnQdc+d0H+DDpW+/gDGuEIbc8PVL0B3KrA0Y=",
+        "owner": "uyha",
+        "repo": "tree-sitter-cmake",
+        "rev": "4864abb95a1f6e54d6b362677beef9fb674b41e9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "uyha",
+        "repo": "tree-sitter-cmake",
         "type": "github"
       }
     },
@@ -581,16 +715,32 @@
     "tree-sitter-cpp": {
       "flake": false,
       "locked": {
-        "lastModified": 1716623200,
-        "narHash": "sha256-3akSuQltFMF6I32HwRU08+Hcl9ojxPGk2ZuOX3gAObw=",
+        "lastModified": 1717489140,
+        "narHash": "sha256-mMHNRKhfhI+OXmNOf1nlVr7JWmJ8BJMOJdaXqv3pk9w=",
         "owner": "tree-sitter",
         "repo": "tree-sitter-cpp",
-        "rev": "d29fbff09a8c9ff4f3074de2595dfca12cb33da9",
+        "rev": "9d412ba7e597fe158f209da33e60f31b1f0df967",
         "type": "github"
       },
       "original": {
         "owner": "tree-sitter",
         "repo": "tree-sitter-cpp",
+        "type": "github"
+      }
+    },
+    "tree-sitter-crystal": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1716905404,
+        "narHash": "sha256-XN87zfYt/EsfFGkmOojrXgwqIr6fN2F17vPhTbEtqiY=",
+        "owner": "crystal-lang-tools",
+        "repo": "tree-sitter",
+        "rev": "c67e9bc000f006212edae98d167c83411a3d8309",
+        "type": "github"
+      },
+      "original": {
+        "owner": "crystal-lang-tools",
+        "repo": "tree-sitter",
         "type": "github"
       }
     },
@@ -615,13 +765,13 @@
       "locked": {
         "lastModified": 1714232162,
         "narHash": "sha256-5VL7uREH0lloAWo9rdJXsjDsWxgL6fngWJSmi4fM7UQ=",
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-csv",
         "rev": "7eb7297823605392d2bbcc4c09b1cd18d6fa9529",
         "type": "github"
       },
       "original": {
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-csv",
         "type": "github"
       }
@@ -658,6 +808,22 @@
         "type": "github"
       }
     },
+    "tree-sitter-d": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1711218562,
+        "narHash": "sha256-Epw1QW4WS1le8OdQI0soO0VaDOgNveh7WTL4sol/cQU=",
+        "owner": "gdamore",
+        "repo": "tree-sitter-d",
+        "rev": "750dde90ed9cdbd82493bc28478d8ab1976b0e9f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "gdamore",
+        "repo": "tree-sitter-d",
+        "type": "github"
+      }
+    },
     "tree-sitter-dart": {
       "flake": false,
       "locked": {
@@ -671,6 +837,22 @@
       "original": {
         "owner": "UserNobody14",
         "repo": "tree-sitter-dart",
+        "type": "github"
+      }
+    },
+    "tree-sitter-dbml": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1698901827,
+        "narHash": "sha256-IxxUW6YYxP1hkwA9NEojEEE3c8pwvAI6juX8aF7NfMw=",
+        "owner": "dynamotn",
+        "repo": "tree-sitter-dbml",
+        "rev": "2e2fa5640268c33c3d3f27f7e676f631a9c68fd9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dynamotn",
+        "repo": "tree-sitter-dbml",
         "type": "github"
       }
     },
@@ -727,25 +909,57 @@
       "locked": {
         "lastModified": 1714232319,
         "narHash": "sha256-yR2JtWYdy84z38Idx84qIuUPoBMiSj/7TVw0J1+g/U8=",
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-doxygen",
         "rev": "4a30eba5d047d6a8c5b005202b4848c0b33d76ca",
         "type": "github"
       },
       "original": {
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-doxygen",
+        "type": "github"
+      }
+    },
+    "tree-sitter-edoc": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1669172607,
+        "narHash": "sha256-ALGr1vI/R2gAgjHfwORYMP/+CeIejnSGqC9Db+GD5uM=",
+        "owner": "the-mikedavis",
+        "repo": "tree-sitter-edoc",
+        "rev": "74774af7b45dd9cefbf9510328fc6ff2374afc50",
+        "type": "github"
+      },
+      "original": {
+        "owner": "the-mikedavis",
+        "repo": "tree-sitter-edoc",
+        "type": "github"
+      }
+    },
+    "tree-sitter-eiffel": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717568012,
+        "narHash": "sha256-Tl+/P8ofalz+wThGSOKwff2eCbdT0nMvdMEUw66YI7s=",
+        "owner": "imustafin",
+        "repo": "tree-sitter-eiffel",
+        "rev": "6566d7448d658dd61dc41f730902f61a61d40d9f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "imustafin",
+        "repo": "tree-sitter-eiffel",
         "type": "github"
       }
     },
     "tree-sitter-elixir": {
       "flake": false,
       "locked": {
-        "lastModified": 1712595762,
-        "narHash": "sha256-bvbOWF+Fy3IhOPhkW6pB/3LcLXnPzqVQb8GOCCQWzw0=",
+        "lastModified": 1717589899,
+        "narHash": "sha256-1B3jVMJs1WNU3K7t42mv9Ab85KEaa8vn8zURksNts+E=",
         "owner": "elixir-lang",
         "repo": "tree-sitter-elixir",
-        "rev": "de690fa8a028f122af46d9d2685679fe5f2d7d60",
+        "rev": "c7ae8b77e2749826dcf23df6514f08fdd68c66a3",
         "type": "github"
       },
       "original": {
@@ -834,6 +1048,22 @@
         "type": "github"
       }
     },
+    "tree-sitter-exograph": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1716740331,
+        "narHash": "sha256-tPlSAW5B2T3DeEt7W8yd5P3GBvBR6rp3TwmdwnJgQ2g=",
+        "owner": "exograph",
+        "repo": "tree-sitter-exograph",
+        "rev": "b6c30a8e5b7a899f7023c97971eaef2ec55b2f05",
+        "type": "github"
+      },
+      "original": {
+        "owner": "exograph",
+        "repo": "tree-sitter-exograph",
+        "type": "github"
+      }
+    },
     "tree-sitter-fennel": {
       "flake": false,
       "locked": {
@@ -917,11 +1147,11 @@
     "tree-sitter-fsharp": {
       "flake": false,
       "locked": {
-        "lastModified": 1717316884,
-        "narHash": "sha256-MBI4QOcnX81moMKqNTSfomQ4mHWqr/IMKRc6YD4nfqI=",
+        "lastModified": 1717450103,
+        "narHash": "sha256-1g3HLCUfWtb0YKI+hZZmDzI6lcGcdcgCEF/jMDsYmb8=",
         "owner": "ionide",
         "repo": "tree-sitter-fsharp",
-        "rev": "d9ec73b74a7b7eef01f9d57714459efb91b3bb1f",
+        "rev": "53afb0c135716e9c503ffd4bbd7c6a8d16032ec9",
         "type": "github"
       },
       "original": {
@@ -962,6 +1192,38 @@
         "type": "github"
       }
     },
+    "tree-sitter-gas": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1694787376,
+        "narHash": "sha256-HyLNnmK4jud2Ndkc+5MY9MlASh/ehPA/eQATsCVGcUw=",
+        "owner": "sirius94",
+        "repo": "tree-sitter-gas",
+        "rev": "60f443646b20edee3b7bf18f3a4fb91dc214259a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sirius94",
+        "repo": "tree-sitter-gas",
+        "type": "github"
+      }
+    },
+    "tree-sitter-git-commit": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1691156375,
+        "narHash": "sha256-KEbfZg8/Fn0BFLAf2rsLuScJGBk4K5ErclTvMFWESkc=",
+        "owner": "the-mikedavis",
+        "repo": "tree-sitter-git-commit",
+        "rev": "6f193a66e9aa872760823dff020960c6cedc37b3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "the-mikedavis",
+        "repo": "tree-sitter-git-commit",
+        "type": "github"
+      }
+    },
     "tree-sitter-git-config": {
       "flake": false,
       "locked": {
@@ -999,13 +1261,13 @@
       "locked": {
         "lastModified": 1709149514,
         "narHash": "sha256-h9RPFI40C4LxjjKZEKkVCnUjNkh6Tgl74msSTpju7ZY=",
-        "owner": "ObserverOfTime",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-gitattributes",
         "rev": "41940e199ba5763abea1d21b4f717014b45f01ea",
         "type": "github"
       },
       "original": {
-        "owner": "ObserverOfTime",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-gitattributes",
         "type": "github"
       }
@@ -1143,13 +1405,13 @@
       "locked": {
         "lastModified": 1683956014,
         "narHash": "sha256-2foA2sd5PQpmeX8OhXrW/dxoJaEyxDXzPWh+UD0dgzQ=",
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-go-sum",
         "rev": "e2ac513b2240c7ff1069ae33b2df29ce90777c11",
         "type": "github"
       },
       "original": {
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-go-sum",
         "type": "github"
       }
@@ -1167,6 +1429,22 @@
       "original": {
         "owner": "ngalaiko",
         "repo": "tree-sitter-go-template",
+        "type": "github"
+      }
+    },
+    "tree-sitter-gowork": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1706692429,
+        "narHash": "sha256-lM4L4Ap/c8uCr4xUw9+l/vaGb3FxxnuZI0+xKYFDPVg=",
+        "owner": "d1y",
+        "repo": "tree-sitter-go-work",
+        "rev": "a2a4b99b53b3740855ff33f0b54cab0bb4ce6f45",
+        "type": "github"
+      },
+      "original": {
+        "owner": "d1y",
+        "repo": "tree-sitter-go-work",
         "type": "github"
       }
     },
@@ -1319,13 +1597,13 @@
       "locked": {
         "lastModified": 1710295164,
         "narHash": "sha256-o0ArFfBJTrEQVXVet+AIDPCB/b9KKvOYrrtMGyLgtM8=",
-        "owner": "connorlay",
+        "owner": "phoenixframework",
         "repo": "tree-sitter-heex",
         "rev": "b5ad6e34eea18a15bbd1466ca707a17f9bff7b93",
         "type": "github"
       },
       "original": {
-        "owner": "connorlay",
+        "owner": "phoenixframework",
         "repo": "tree-sitter-heex",
         "type": "github"
       }
@@ -1343,6 +1621,22 @@
       "original": {
         "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-hlsl",
+        "type": "github"
+      }
+    },
+    "tree-sitter-hosts": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1669867468,
+        "narHash": "sha256-f8ldDZD0I/D8IC566bZ4YgQE/b0maTE3BfzuzPfy92k=",
+        "owner": "ath3",
+        "repo": "tree-sitter-hosts",
+        "rev": "301b9379ce7dfc8bdbe2c2699a6887dcb73953f9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ath3",
+        "repo": "tree-sitter-hosts",
         "type": "github"
       }
     },
@@ -1415,14 +1709,30 @@
       "locked": {
         "lastModified": 1711373576,
         "narHash": "sha256-jKp880I0XkApB3aFINAPfwn1txuMwalh4NrLUHan3H4=",
-        "owner": "luckasRanarison",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-hyprlang",
         "rev": "e5da7d0aa44403153e0394d87d9edea4e5bd6609",
         "type": "github"
       },
       "original": {
-        "owner": "luckasRanarison",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-hyprlang",
+        "type": "github"
+      }
+    },
+    "tree-sitter-iex": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641664490,
+        "narHash": "sha256-YRVxMz9VqZ00bG0tQ/IDxf/8UkK3/OYZTIMxsQfknII=",
+        "owner": "elixir-lang",
+        "repo": "tree-sitter-iex",
+        "rev": "39f20bb51f502e32058684e893c0c0b00bb2332c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "elixir-lang",
+        "repo": "tree-sitter-iex",
         "type": "github"
       }
     },
@@ -1602,6 +1912,38 @@
         "type": "github"
       }
     },
+    "tree-sitter-kanata": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1713627792,
+        "narHash": "sha256-C1JEvaSJAwV/040KAjAK2aX+jdkIMVixr78c7jY0COU=",
+        "owner": "postsolar",
+        "repo": "tree-sitter-kanata",
+        "rev": "a6213d06ea6efa432702bbbc6b4c5dcddc21df2a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "postsolar",
+        "repo": "tree-sitter-kanata",
+        "type": "github"
+      }
+    },
+    "tree-sitter-kcl": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717575516,
+        "narHash": "sha256-qczsSoC0FMCyXYTUdSjXixKyX9b6+A268uzgLkw06DY=",
+        "owner": "kcl-lang",
+        "repo": "tree-sitter-kcl",
+        "rev": "c1f8206b30d7fa0bd54519202f5ade21b75635d6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kcl-lang",
+        "repo": "tree-sitter-kcl",
+        "type": "github"
+      }
+    },
     "tree-sitter-kconfig": {
       "flake": false,
       "locked": {
@@ -1634,6 +1976,22 @@
         "type": "github"
       }
     },
+    "tree-sitter-kittyconf": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1679628433,
+        "narHash": "sha256-ELLlQPR6y8Y+vz6LX6Dx840X2UkrL/mhYZJ3NpaJrMs=",
+        "owner": "clo4",
+        "repo": "tree-sitter-kitty-conf",
+        "rev": "9cdf551522d509c0432f136eb373bdf2e6032493",
+        "type": "github"
+      },
+      "original": {
+        "owner": "clo4",
+        "repo": "tree-sitter-kitty-conf",
+        "type": "github"
+      }
+    },
     "tree-sitter-kotlin": {
       "flake": false,
       "locked": {
@@ -1653,11 +2011,11 @@
     "tree-sitter-koto": {
       "flake": false,
       "locked": {
-        "lastModified": 1716912054,
-        "narHash": "sha256-2VORgZg47vVu77bGBbYY0afFweFTRbJ6T78ihADqpWA=",
+        "lastModified": 1717409399,
+        "narHash": "sha256-pBOEuYmI8X8ul/lXDOARlob7dF3opjRoejHbGROYVqM=",
         "owner": "koto-lang",
         "repo": "tree-sitter-koto",
-        "rev": "2ff158a3c7c8ac8e50c1aefe8a3162a9156a73e7",
+        "rev": "eb8d866cff5751c0a7650623d244280618b0a378",
         "type": "github"
       },
       "original": {
@@ -1682,6 +2040,54 @@
         "type": "github"
       }
     },
+    "tree-sitter-ld": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1712961167,
+        "narHash": "sha256-U+yqSO+vo1RAZrCqCojhY4HwjcjirZU/HgWDCdw3YGw=",
+        "owner": "mtoohey31",
+        "repo": "tree-sitter-ld",
+        "rev": "0e9695ae0ede47b8744a8e2ad44d4d40c5d4e4c9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mtoohey31",
+        "repo": "tree-sitter-ld",
+        "type": "github"
+      }
+    },
+    "tree-sitter-ldif": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1685204070,
+        "narHash": "sha256-xivgajrM0sqbEcX+ZN0h5C+s7KJVJanrvxRQ/j1VNIQ=",
+        "owner": "kepet19",
+        "repo": "tree-sitter-ldif",
+        "rev": "0a917207f65ba3e3acfa9cda16142ee39c4c1aaa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kepet19",
+        "repo": "tree-sitter-ldif",
+        "type": "github"
+      }
+    },
+    "tree-sitter-lean": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1655997541,
+        "narHash": "sha256-yrxjynqNpWwF50fAnbf6SNcoLqzZC5cdZCWAZg2zNfs=",
+        "owner": "Julian",
+        "repo": "tree-sitter-lean",
+        "rev": "50945b4f7bde98d70ffca850c4e136ce053934df",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Julian",
+        "repo": "tree-sitter-lean",
+        "type": "github"
+      }
+    },
     "tree-sitter-linkerscript": {
       "flake": false,
       "locked": {
@@ -1696,6 +2102,86 @@
         "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-linkerscript",
         "type": "github"
+      }
+    },
+    "tree-sitter-liquid": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1711740910,
+        "narHash": "sha256-RmpVKvQfk4IQuE3KOTL3nbBS7LSpBlvMpl5JDAAKb5Q=",
+        "owner": "hankthetank27",
+        "repo": "tree-sitter-liquid",
+        "rev": "293369818da219d97327908aab33707b04b63fd9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hankthetank27",
+        "repo": "tree-sitter-liquid",
+        "type": "github"
+      }
+    },
+    "tree-sitter-liquidsoap": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1716143433,
+        "narHash": "sha256-FERYGF9D163b6S/YBwHwkrUM2qRkEKOViSDRa61OjtQ=",
+        "owner": "savonet",
+        "repo": "tree-sitter-liquidsoap",
+        "rev": "14feafa91630afb1ab9988cf9b738b7ea29f3f89",
+        "type": "github"
+      },
+      "original": {
+        "owner": "savonet",
+        "repo": "tree-sitter-liquidsoap",
+        "type": "github"
+      }
+    },
+    "tree-sitter-llvm-mir": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1640906605,
+        "narHash": "sha256-uQwKSNJfoeDDSi4YZwudUZD3kxkngvW2ZP1qtVKvfqg=",
+        "owner": "Flakebi",
+        "repo": "tree-sitter-llvm-mir",
+        "rev": "06fabca19454b2dc00c1b211a7cb7ad0bc2585f1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Flakebi",
+        "repo": "tree-sitter-llvm-mir",
+        "type": "github"
+      }
+    },
+    "tree-sitter-log": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1700995955,
+        "narHash": "sha256-lvN2it+pNyYvGIqtRI+zUZwPrj/3SLMZX9zordYg3IU=",
+        "owner": "Tudyx",
+        "repo": "tree-sitter-log",
+        "rev": "62cfe307e942af3417171243b599cc7deac5eab9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Tudyx",
+        "repo": "tree-sitter-log",
+        "type": "github"
+      }
+    },
+    "tree-sitter-lpf": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1697225096,
+        "narHash": "sha256-Y+W4Ceb0+gUJbBC9ziy672not6zc8JVIGTWYsPmWk7c=",
+        "owner": "TheZoq2",
+        "repo": "tree-sitter-lpf",
+        "rev": "db7372e60c722ca7f12ab359e57e6bf7611ab126",
+        "type": "gitlab"
+      },
+      "original": {
+        "owner": "TheZoq2",
+        "repo": "tree-sitter-lpf",
+        "type": "gitlab"
       }
     },
     "tree-sitter-lua": {
@@ -1735,13 +2221,13 @@
       "locked": {
         "lastModified": 1690489134,
         "narHash": "sha256-SW2ubK5317GUc1dQLkhoaisMgctLOwr6TPVYSQh02vE=",
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-luap",
         "rev": "31461ae9bd0866cb5117cfe5de71189854fd0f3e",
         "type": "github"
       },
       "original": {
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-luap",
         "type": "github"
       }
@@ -1759,6 +2245,22 @@
       "original": {
         "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-luau",
+        "type": "github"
+      }
+    },
+    "tree-sitter-markdoc": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1690702007,
+        "narHash": "sha256-TLwy1/q/2DQdRpNrlpO3tyMFkS26dCsi1STHEkkoU/s=",
+        "owner": "markdoc-extra",
+        "repo": "tree-sitter-markdoc",
+        "rev": "fe933e7737d5c97404b03d0979f63b45049d20a7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "markdoc-extra",
+        "repo": "tree-sitter-markdoc",
         "type": "github"
       }
     },
@@ -1799,14 +2301,46 @@
       "locked": {
         "lastModified": 1711445852,
         "narHash": "sha256-+RqhCA+WoE2Lnk9vGiAYcdvl+ovxX5kaJhQ8m9H/fvo=",
-        "owner": "Decodetalkers",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-meson",
         "rev": "bd17c824196ce70800f64ad39cfddd1b17acc13f",
         "type": "github"
       },
       "original": {
-        "owner": "Decodetalkers",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-meson",
+        "type": "github"
+      }
+    },
+    "tree-sitter-mojo": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717572210,
+        "narHash": "sha256-T+5QT7iVH//ysBfHDmG/nSNY7tjC3xH02pbPOL7WEZA=",
+        "owner": "lsh",
+        "repo": "tree-sitter-mojo",
+        "rev": "fb231abd48a6fa59db32e143ab7624cc97c75fd8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lsh",
+        "repo": "tree-sitter-mojo",
+        "type": "github"
+      }
+    },
+    "tree-sitter-move": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717629974,
+        "narHash": "sha256-5Ktk5KcJBrkWBP6zfqx9K4CTWiSU6gVlToBznUXt1PY=",
+        "owner": "tzakian",
+        "repo": "tree-sitter-move",
+        "rev": "b454ad6dd9d5decd66889b2c71448f79f3c3b39c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tzakian",
+        "repo": "tree-sitter-move",
         "type": "github"
       }
     },
@@ -1845,11 +2379,11 @@
     "tree-sitter-nickel": {
       "flake": false,
       "locked": {
-        "lastModified": 1716989419,
-        "narHash": "sha256-seSpWn29Hml6q6j5wAwWlU8YiWG4t4c5uIDEuZg2V+M=",
+        "lastModified": 1717495797,
+        "narHash": "sha256-9Ei0uy+eGK9oiH7y2KIhB1E88SRzGnZinqECT3kYTVE=",
         "owner": "nickel-lang",
         "repo": "tree-sitter-nickel",
-        "rev": "0a796f3a312917724c1d9f486a201f7402a8acfd",
+        "rev": "43433d8477b24cd13acaac20a66deda49b7e2547",
         "type": "github"
       },
       "original": {
@@ -1975,13 +2509,13 @@
       "locked": {
         "lastModified": 1691972461,
         "narHash": "sha256-Q1qAUgoYfpxmhn5XpnCwLBdu2BL2YF2We9bjumR8dNk=",
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-objc",
         "rev": "62e61b6f5c0289c376d61a8c91faf6435cde9012",
         "type": "github"
       },
       "original": {
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-objc",
         "type": "github"
       }
@@ -2015,6 +2549,54 @@
       "original": {
         "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-odin",
+        "type": "github"
+      }
+    },
+    "tree-sitter-ohm": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1711312058,
+        "narHash": "sha256-r8cPJiTbHl2V2DnOaEv6WHIfF0DUsUtI9jtzxUVW0nM=",
+        "owner": "novusnota",
+        "repo": "tree-sitter-ohm",
+        "rev": "8b77e85eecd5597831bd8827f14a3a4fbc4a1337",
+        "type": "github"
+      },
+      "original": {
+        "owner": "novusnota",
+        "repo": "tree-sitter-ohm",
+        "type": "github"
+      }
+    },
+    "tree-sitter-opencl": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1680164392,
+        "narHash": "sha256-tymKOBQbbXAI4bUDSOnZaMoyhFuDwSInvqgGq0eTDl8=",
+        "owner": "lefp",
+        "repo": "tree-sitter-opencl",
+        "rev": "8e1d24a57066b3cd1bb9685bbc1ca9de5c1b78fb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lefp",
+        "repo": "tree-sitter-opencl",
+        "type": "github"
+      }
+    },
+    "tree-sitter-openscad": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1711426159,
+        "narHash": "sha256-4kzu8OXAGzs3y+mpAKeQxJ0M9wlJdiv11i8PnGLuH2c=",
+        "owner": "bollian",
+        "repo": "tree-sitter-openscad",
+        "rev": "bb1e12023e59489c0892af0c0c9a5b323af69df6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bollian",
+        "repo": "tree-sitter-openscad",
         "type": "github"
       }
     },
@@ -2083,6 +2665,22 @@
         "type": "github"
       }
     },
+    "tree-sitter-pest": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1711003717,
+        "narHash": "sha256-Jpp14NLungcVHvl7wyp6Egrc/ToNrZzwDSkXKD+Z3Uo=",
+        "owner": "pest-parser",
+        "repo": "tree-sitter-pest",
+        "rev": "a8a98a824452b1ec4da7f508386a187a2f234b85",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pest-parser",
+        "repo": "tree-sitter-pest",
+        "type": "github"
+      }
+    },
     "tree-sitter-php": {
       "flake": false,
       "locked": {
@@ -2096,6 +2694,22 @@
       "original": {
         "owner": "tree-sitter",
         "repo": "tree-sitter-php",
+        "type": "github"
+      }
+    },
+    "tree-sitter-pkl": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717603729,
+        "narHash": "sha256-6cO968oEF+pcPGm4jiIC3layFzQf6eQa4m6iOReeo4w=",
+        "owner": "apple",
+        "repo": "tree-sitter-pkl",
+        "rev": "81db61d50258d64bf3452e9dfa44d310750c15e7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "apple",
+        "repo": "tree-sitter-pkl",
         "type": "github"
       }
     },
@@ -2120,13 +2734,13 @@
       "locked": {
         "lastModified": 1713616386,
         "narHash": "sha256-/St0VxDTAF872ZlBph1TukRoO0PBIOMT0D11DZ6nSLQ=",
-        "owner": "erasin",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-po",
         "rev": "bd860a0f57f697162bf28e576674be9c1500db5e",
         "type": "github"
       },
       "original": {
-        "owner": "erasin",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-po",
         "type": "github"
       }
@@ -2244,18 +2858,34 @@
         "type": "github"
       }
     },
+    "tree-sitter-protobuf": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1629649280,
+        "narHash": "sha256-h86NQAIRU+mUroa0LqokMtEVd7U5BXo/DADc2UUZQzI=",
+        "owner": "yusdacra",
+        "repo": "tree-sitter-protobuf",
+        "rev": "5aef38d655f76a6b0d172340eed3766c93b3124c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yusdacra",
+        "repo": "tree-sitter-protobuf",
+        "type": "github"
+      }
+    },
     "tree-sitter-puppet": {
       "flake": false,
       "locked": {
         "lastModified": 1713617121,
         "narHash": "sha256-+zMgzyuGerJ8l+i5ZtWnmGr3i4fFiSLD5FssyKESsmI=",
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-puppet",
         "rev": "584522f32495d648b18a53ccb52d988e60de127d",
         "type": "github"
       },
       "original": {
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-puppet",
         "type": "github"
       }
@@ -2263,11 +2893,11 @@
     "tree-sitter-pymanifest": {
       "flake": false,
       "locked": {
-        "lastModified": 1709149864,
-        "narHash": "sha256-pZCqeSdiYctbFthdb8Olw35CAXQmT7jG2LOO/3NN/8s=",
+        "lastModified": 1717579406,
+        "narHash": "sha256-Kud/E67Sh9F4nc8nzW5UXFHW5+kGftLyFzwLOKLcpL8=",
         "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-pymanifest",
-        "rev": "e3b82b78721aee07f676dac8473ae69db51debcf",
+        "rev": "be062582956165019d3253794b4d712f66dfeaaa",
         "type": "github"
       },
       "original": {
@@ -2404,6 +3034,22 @@
         "type": "github"
       }
     },
+    "tree-sitter-ralph": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1715699279,
+        "narHash": "sha256-Yf2vq7h7UrJmdjQbXU8HM0hjUwwRBFlEV1O+ZUyMIuk=",
+        "owner": "alephium",
+        "repo": "tree-sitter-ralph",
+        "rev": "48b9d9d6e2b55ce8f9eb09ceb0d952e4b1cc87a0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "alephium",
+        "repo": "tree-sitter-ralph",
+        "type": "github"
+      }
+    },
     "tree-sitter-rasi": {
       "flake": false,
       "locked": {
@@ -2471,15 +3117,15 @@
     "tree-sitter-requirements": {
       "flake": false,
       "locked": {
-        "lastModified": 1716203727,
-        "narHash": "sha256-wqaFpT/4Gq8mWoORcZeGah18VunvKlgr8gCgHQvEF6E=",
-        "owner": "ObserverOfTime",
+        "lastModified": 1717574643,
+        "narHash": "sha256-L3PF6B+d+v/pjAQGVwkc7hCKrhbAB7u/BdXOpEum08w=",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-requirements",
-        "rev": "360c6a6b31076a482663806f7a8241de9cad6b4e",
+        "rev": "5ad9b7581b3334f6ad492847d007f2fac6e6e5f2",
         "type": "github"
       },
       "original": {
-        "owner": "ObserverOfTime",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-requirements",
         "type": "github"
       }
@@ -2500,18 +3146,34 @@
         "type": "github"
       }
     },
+    "tree-sitter-rifleconfig": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717664820,
+        "narHash": "sha256-qiUKQyQ6SpqKK6nu7el2p9nAhU0MpQWBq5pVpDwCpuM=",
+        "owner": "seanbreckenridge",
+        "repo": "tree-sitter-rifleconfig",
+        "rev": "1c27f1c7d11b6f14e428be8ba63df5ad0d8492d1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "seanbreckenridge",
+        "repo": "tree-sitter-rifleconfig",
+        "type": "github"
+      }
+    },
     "tree-sitter-ron": {
       "flake": false,
       "locked": {
         "lastModified": 1714947760,
         "narHash": "sha256-Sp0g6AWKHNjyUmL5k3RIU+5KtfICfg3o/DH77XRRyI0=",
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-ron",
         "rev": "78938553b93075e638035f624973083451b29055",
         "type": "github"
       },
       "original": {
-        "owner": "amaanq",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-ron",
         "type": "github"
       }
@@ -2529,6 +3191,22 @@
       "original": {
         "owner": "stsewd",
         "repo": "tree-sitter-rst",
+        "type": "github"
+      }
+    },
+    "tree-sitter-rstml": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1714078499,
+        "narHash": "sha256-2jRDU7ZREeOup+yYLdaVlakkmAegL4S3KzI1mczZIS0=",
+        "owner": "rayliwell",
+        "repo": "tree-sitter-rstml",
+        "rev": "9558d7302c5d8d0b0594dbfce778bb56f9d5079a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rayliwell",
+        "repo": "tree-sitter-rstml",
         "type": "github"
       }
     },
@@ -2580,6 +3258,22 @@
         "type": "github"
       }
     },
+    "tree-sitter-scheme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1712885635,
+        "narHash": "sha256-QECZQVhWntN+3wnIA+U3JesuoLZiSU7pOrsKRdVPLtk=",
+        "owner": "6cdh",
+        "repo": "tree-sitter-scheme",
+        "rev": "8f9dff3d038f09934db5ea113cebc59c74447743",
+        "type": "github"
+      },
+      "original": {
+        "owner": "6cdh",
+        "repo": "tree-sitter-scheme",
+        "type": "github"
+      }
+    },
     "tree-sitter-sdml": {
       "flake": false,
       "locked": {
@@ -2615,11 +3309,11 @@
     "tree-sitter-slint": {
       "flake": false,
       "locked": {
-        "lastModified": 1717164109,
-        "narHash": "sha256-c53QVDwUuOSoc+fgM73bbZ39qh2wRFe3fCuLNSF+mDQ=",
+        "lastModified": 1717408455,
+        "narHash": "sha256-NFKh3Z9vU1KImjU4Yd/Bnxq3E8kz8k/w2TzEvAtffnY=",
         "owner": "slint-ui",
         "repo": "tree-sitter-slint",
-        "rev": "59ace2390848e8ab17b47e0b9fa1e5fde8077316",
+        "rev": "d82ab8c19ea1b60ff570256eaef7d137cc5ecb63",
         "type": "github"
       },
       "original": {
@@ -2644,6 +3338,38 @@
         "type": "github"
       }
     },
+    "tree-sitter-sml": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662326796,
+        "narHash": "sha256-HH9QD2pdO4iAzqbKpQGi46rgNtcQ8OlFfgV/vfMr8a8=",
+        "owner": "Giorbo",
+        "repo": "tree-sitter-sml",
+        "rev": "f56de7d96dd3b9bb8e0a529a647313b900817507",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Giorbo",
+        "repo": "tree-sitter-sml",
+        "type": "github"
+      }
+    },
+    "tree-sitter-spicedb": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1707355329,
+        "narHash": "sha256-dEpPkEohBB3qU1Vma/1VePkGGst4nA2RKgun7NiO2OA=",
+        "owner": "authzed",
+        "repo": "tree-sitter-spicedb",
+        "rev": "a4e4645651f86d6684c15dfa9931b7841dc52a66",
+        "type": "github"
+      },
+      "original": {
+        "owner": "authzed",
+        "repo": "tree-sitter-spicedb",
+        "type": "github"
+      }
+    },
     "tree-sitter-squirrel": {
       "flake": false,
       "locked": {
@@ -2663,11 +3389,11 @@
     "tree-sitter-ssh-client-config": {
       "flake": false,
       "locked": {
-        "lastModified": 1716237099,
-        "narHash": "sha256-+AXvn7Opr7sLeQ9vnWD7XKxKMR5/EF7jHl5uNeEmtdI=",
+        "lastModified": 1717618357,
+        "narHash": "sha256-gP8YJfnIPDOZcRDh+A/qNwMzz5Ek8vPzQXEqWt/Or70=",
         "owner": "metio",
         "repo": "tree-sitter-ssh-client-config",
-        "rev": "b0f22981c74d1163854b2b22a4aaf50caeed10f7",
+        "rev": "fb41eb3c21d83648548f31244798c102846e7ea2",
         "type": "github"
       },
       "original": {
@@ -2681,13 +3407,13 @@
       "locked": {
         "lastModified": 1713517206,
         "narHash": "sha256-V7JI1o30+mzGA4X1oh+pyu3rSWOfHFKfCUbYaFPLOmM=",
-        "owner": "ObserverOfTime",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-ssh-config",
         "rev": "77450e8bce8853921512348f83c73c168c71fdfb",
         "type": "github"
       },
       "original": {
-        "owner": "ObserverOfTime",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-ssh-config",
         "type": "github"
       }
@@ -2756,6 +3482,22 @@
         "type": "github"
       }
     },
+    "tree-sitter-sway": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1694030651,
+        "narHash": "sha256-Y08vgnlxOSjvI3NURU8VUyaGjKt+q4IiCaV18C5co0s=",
+        "owner": "FuelLabs",
+        "repo": "tree-sitter-sway",
+        "rev": "03d97aad336ecc6b302f23bdd9b695ddc937160b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "FuelLabs",
+        "repo": "tree-sitter-sway",
+        "type": "github"
+      }
+    },
     "tree-sitter-sxhkdrc": {
       "flake": false,
       "locked": {
@@ -2804,6 +3546,22 @@
         "type": "github"
       }
     },
+    "tree-sitter-task": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660776506,
+        "narHash": "sha256-0vqXoDgQcAE1rm3kFlb+l/S4cZuL5sU3WsZMDSna1+s=",
+        "owner": "alexanderbrevig",
+        "repo": "tree-sitter-task",
+        "rev": "ed4fb3674dd2d889c36e121f7173099290452af2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "alexanderbrevig",
+        "repo": "tree-sitter-task",
+        "type": "github"
+      }
+    },
     "tree-sitter-tcl": {
       "flake": false,
       "locked": {
@@ -2817,6 +3575,22 @@
       "original": {
         "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-tcl",
+        "type": "github"
+      }
+    },
+    "tree-sitter-teal": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717414262,
+        "narHash": "sha256-xIws9Q8AsaIowv6nc01ZpF87Dy8rL78EoZgXuBmg6Kg=",
+        "owner": "euclidianAce",
+        "repo": "tree-sitter-teal",
+        "rev": "19b02da829d1721a521bf7b802eb80a50bd53aab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "euclidianAce",
+        "repo": "tree-sitter-teal",
         "type": "github"
       }
     },
@@ -2900,6 +3674,38 @@
         "type": "github"
       }
     },
+    "tree-sitter-typespec": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717358808,
+        "narHash": "sha256-MzUcz6vnsakszAMJtTOajniFC72sCREdrMhS/zDa3Ng=",
+        "owner": "happenslol",
+        "repo": "tree-sitter-typespec",
+        "rev": "28821d0d6da5f0a6b5eb02b9bad953fecafd7248",
+        "type": "github"
+      },
+      "original": {
+        "owner": "happenslol",
+        "repo": "tree-sitter-typespec",
+        "type": "github"
+      }
+    },
+    "tree-sitter-typst": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1715259279,
+        "narHash": "sha256-W8mNIASM85btE3XychvagVJofIb+CkNT4XeIhdQt8FU=",
+        "owner": "uben0",
+        "repo": "tree-sitter-typst",
+        "rev": "3924cb9ed9e0e62ce7df9c4fe0faa4c234795999",
+        "type": "github"
+      },
+      "original": {
+        "owner": "uben0",
+        "repo": "tree-sitter-typst",
+        "type": "github"
+      }
+    },
     "tree-sitter-udev": {
       "flake": false,
       "locked": {
@@ -2913,6 +3719,22 @@
       "original": {
         "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-udev",
+        "type": "github"
+      }
+    },
+    "tree-sitter-uiua": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1710153040,
+        "narHash": "sha256-FBMdkWrXrHHyu87YBH0Bu7LatCNUZsrOU7yhyPfSEvw=",
+        "owner": "shnarazk",
+        "repo": "tree-sitter-uiua",
+        "rev": "a1f5946f583b95f34cbc36717dd358563e6d992c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "shnarazk",
+        "repo": "tree-sitter-uiua",
         "type": "github"
       }
     },
@@ -3012,18 +3834,34 @@
         "type": "github"
       }
     },
+    "tree-sitter-vhdl": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1641693205,
+        "narHash": "sha256-CtlhSAKp90nXLI5g+vAd0dZZxjPTyMcNFvHL8DBY4j8=",
+        "owner": "teburd",
+        "repo": "tree-sitter-vhdl",
+        "rev": "a3b2d84990527c7f8f4ae219c332c00c33d2d8e5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "teburd",
+        "repo": "tree-sitter-vhdl",
+        "type": "github"
+      }
+    },
     "tree-sitter-vim": {
       "flake": false,
       "locked": {
         "lastModified": 1713806352,
         "narHash": "sha256-wQQSeDzcSY9qNVgeDhrELS1x1UoilRa7iHML9qSgchY=",
-        "owner": "neovim",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-vim",
         "rev": "b448ca63f972ade12c373c808acdd2bf972937db",
         "type": "github"
       },
       "original": {
-        "owner": "neovim",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-vim",
         "type": "github"
       }
@@ -3031,11 +3869,11 @@
     "tree-sitter-vimdoc": {
       "flake": false,
       "locked": {
-        "lastModified": 1713806200,
-        "narHash": "sha256-+QbLL5EC3oNiwd7h7MW/mutHhGPUHhbYTQcu6x6atcI=",
+        "lastModified": 1717508374,
+        "narHash": "sha256-zk2mBnX40AteALIB8sZg9oRrScV855hTReygx3nL9eI=",
         "owner": "neovim",
         "repo": "tree-sitter-vimdoc",
-        "rev": "b711df784dd43d0a8ed8ddbfca0ddcc3239d94b4",
+        "rev": "1b177bd9f53995dac83616e84b552a8d4f6c5f7e",
         "type": "github"
       },
       "original": {
@@ -3061,6 +3899,22 @@
         "type": "github"
       }
     },
+    "tree-sitter-wat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1652829067,
+        "narHash": "sha256-a1l4RsGpRQfUxEjwewyKiV0G7J2DHZW6+y1HnjREYAs=",
+        "owner": "wasm-lsp",
+        "repo": "tree-sitter-wasm",
+        "rev": "2ca28a9f9d709847bf7a3de0942a84e912f59088",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wasm-lsp",
+        "repo": "tree-sitter-wasm",
+        "type": "github"
+      }
+    },
     "tree-sitter-wgsl-bevy": {
       "flake": false,
       "locked": {
@@ -3074,6 +3928,38 @@
       "original": {
         "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-wgsl-bevy",
+        "type": "github"
+      }
+    },
+    "tree-sitter-wing": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1713527927,
+        "narHash": "sha256-jygMTswZ8r4tUJQ0lUH8GHz56dyGd6rV1wL5i75Ni88=",
+        "owner": "winglang",
+        "repo": "tree-sitter-wing",
+        "rev": "bd1d35cf3e013dc7e189b46a593bdc2b281b0dd7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "winglang",
+        "repo": "tree-sitter-wing",
+        "type": "github"
+      }
+    },
+    "tree-sitter-wit": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1715615360,
+        "narHash": "sha256-R8b+UQmj+JtiIGDsvR5KBTGoX99m0k/HJx2bTGNxRH0=",
+        "owner": "liamwh",
+        "repo": "tree-sitter-wit",
+        "rev": "cab94791450524a542324d8cbe8017d69c516d8e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "liamwh",
+        "repo": "tree-sitter-wit",
         "type": "github"
       }
     },
@@ -3093,6 +3979,22 @@
         "type": "github"
       }
     },
+    "tree-sitter-xit": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1710618397,
+        "narHash": "sha256-wTr7YyGnz/dWfA5oecRqxeR8Unoob6isGnQg4/iu+MI=",
+        "owner": "synaptiko",
+        "repo": "tree-sitter-xit",
+        "rev": "a4fad351bfa5efdcb379b40c36671413fbe9caac",
+        "type": "github"
+      },
+      "original": {
+        "owner": "synaptiko",
+        "repo": "tree-sitter-xit",
+        "type": "github"
+      }
+    },
     "tree-sitter-xml": {
       "flake": false,
       "locked": {
@@ -3106,6 +4008,22 @@
       "original": {
         "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-xml",
+        "type": "github"
+      }
+    },
+    "tree-sitter-xtc": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1713173961,
+        "narHash": "sha256-teUDDvH8Km1WHNXyrUtX1yULYOaTgaAwT6aCaR4MTfs=",
+        "owner": "Alexis-Lapierre",
+        "repo": "tree-sitter-xtc",
+        "rev": "7bc11b736250c45e25cfb0215db2f8393779957e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Alexis-Lapierre",
+        "repo": "tree-sitter-xtc",
         "type": "github"
       }
     },
@@ -3146,13 +4064,13 @@
       "locked": {
         "lastModified": 1714947410,
         "narHash": "sha256-l8c1/7q8S78jGyl+VAVVgs8wq58PrrjycyJfWXsCgAI=",
-        "owner": "Philipp-M",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-yuck",
         "rev": "e877f6ade4b77d5ef8787075141053631ba12318",
         "type": "github"
       },
       "original": {
-        "owner": "Philipp-M",
+        "owner": "tree-sitter-grammars",
         "repo": "tree-sitter-yuck",
         "type": "github"
       }

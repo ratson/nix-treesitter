@@ -57,6 +57,7 @@
             "carbon"
             "rescript"
             "rtf"
+            "swift"
             "systemrdl"
           ];
           findLocation = k: if hasAttr k locations then locations.${k} else null;
@@ -214,6 +215,10 @@
       url = "github:mielpeeters/tree-sitter-breaker";
       flake = false;
     };
+    tree-sitter-brightscript = {
+      url = "github:ajdelcimmuto/tree-sitter-brightscript";
+      flake = false;
+    };
     tree-sitter-c = {
       url = "github:tree-sitter/tree-sitter-c";
       flake = false;
@@ -248,6 +253,10 @@
     };
     tree-sitter-chatito = {
       url = "github:tree-sitter-grammars/tree-sitter-chatito";
+      flake = false;
+    };
+    tree-sitter-cicada = {
+      url = "github:Cicada-Software/tree-sitter-cicada";
       flake = false;
     };
     tree-sitter-clingo = {
@@ -946,6 +955,10 @@
       url = "github:tzakian/tree-sitter-move";
       flake = false;
     };
+    tree-sitter-move-on-aptos = {
+      url = "github:aptos-labs/tree-sitter-move-on-aptos";
+      flake = false;
+    };
     tree-sitter-muttrc = {
       url = "github:neomutt/tree-sitter-muttrc";
       flake = false;
@@ -968,6 +981,10 @@
     };
     tree-sitter-newick = {
       url = "github:delehef/tree-sitter-newick";
+      flake = false;
+    };
+    tree-sitter-nextflow = {
+      url = "github:edmundmiller/tree-sitter-nextflow";
       flake = false;
     };
     tree-sitter-nginx = {
@@ -1036,6 +1053,10 @@
     };
     tree-sitter-ohm = {
       url = "github:novusnota/tree-sitter-ohm";
+      flake = false;
+    };
+    tree-sitter-onyx = {
+      url = "github:brendanfh/tree-sitter-onyx";
       flake = false;
     };
     tree-sitter-opencl = {
@@ -1312,6 +1333,10 @@
     };
     tree-sitter-sdml = {
       url = "github:sdm-lang/tree-sitter-sdml";
+      flake = false;
+    };
+    tree-sitter-semver = {
+      url = "github:uselessscat/tree-sitter-semver";
       flake = false;
     };
     tree-sitter-slang = {
@@ -1688,6 +1713,10 @@
     };
     tree-sitter-zig = {
       url = "github:maxxnino/tree-sitter-zig";
+      flake = false;
+    };
+    tree-sitter-zscript = {
+      url = "github:dastrukar/tree-sitter-zscript";
       flake = false;
     };
   };

@@ -45,15 +45,17 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | blueprint          | [2024-04-28](https://gitlab.com/gabmus/tree-sitter-blueprint)                       |
 | bp                 | [2024-05-13](https://github.com/ambroisie/tree-sitter-bp)                           |
 | breaker            | [2024-04-30](https://github.com/mielpeeters/tree-sitter-breaker)                    |
+| brightscript       | [2024-05-25](https://github.com/ajdelcimmuto/tree-sitter-brightscript)              |
 | c                  | [2024-05-31](https://github.com/tree-sitter/tree-sitter-c)                          |
 | c-sharp            | [2024-05-07](https://github.com/tree-sitter/tree-sitter-c-sharp)                    |
 | cabal              | [2024-03-01](https://github.com/thomasvergne/tree-sitter-cabal)                     |
 | cairo              | [2024-04-27](https://github.com/tree-sitter-grammars/tree-sitter-cairo)             |
 | capnp              | [2024-04-20](https://github.com/tree-sitter-grammars/tree-sitter-capnp)             |
-| carbon             | [2024-06-07](https://github.com/carbon-language/carbon-lang)                        |
+| carbon             | [2024-06-08](https://github.com/carbon-language/carbon-lang)                        |
 | ccomment           | [2024-04-03](https://github.com/mozilla/rust-code-analysis)                         |
 | cel                | [2024-02-13](https://github.com/bufbuild/tree-sitter-cel)                           |
 | chatito            | [2024-04-27](https://github.com/tree-sitter-grammars/tree-sitter-chatito)           |
+| cicada             | [2023-12-20](https://github.com/Cicada-Software/tree-sitter-cicada)                 |
 | clingo             | [2024-04-30](https://github.com/potassco/tree-sitter-clingo)                        |
 | clojure            | [2024-05-22](https://github.com/sogaiu/tree-sitter-clojure)                         |
 | cmake              | [2024-06-05](https://github.com/uyha/tree-sitter-cmake)                             |
@@ -207,8 +209,8 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | llvm               | [2023-09-08](https://github.com/benwilliamgraham/tree-sitter-llvm)                  |
 | llvm-mir           | [2021-12-30](https://github.com/Flakebi/tree-sitter-llvm-mir)                       |
 | log                | [2023-11-26](https://github.com/Tudyx/tree-sitter-log)                              |
-| loongdoc           | [2024-06-07](https://github.com/cathaysia/tree-sitter-loongdoc)                     |
-| loongdoc-inline    | [2024-06-07](https://github.com/cathaysia/tree-sitter-loongdoc)                     |
+| loongdoc           | [2024-06-08](https://github.com/cathaysia/tree-sitter-loongdoc)                     |
+| loongdoc-inline    | [2024-06-08](https://github.com/cathaysia/tree-sitter-loongdoc)                     |
 | lox                | [2023-04-23](https://github.com/ajeetdsouza/tree-sitter-lox)                        |
 | lpf                | [2023-10-13](https://gitlab.com/TheZoq2/tree-sitter-lpf)                            |
 | lua                | [2024-03-11](https://github.com/tree-sitter-grammars/tree-sitter-lua)               |
@@ -231,12 +233,14 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | mlir               | [2024-05-24](https://github.com/artagnon/tree-sitter-mlir)                          |
 | mojo               | [2024-06-05](https://github.com/lsh/tree-sitter-mojo)                               |
 | move               | [2024-06-05](https://github.com/tzakian/tree-sitter-move)                           |
+| move-on-aptos      | [2024-06-06](https://github.com/aptos-labs/tree-sitter-move-on-aptos)               |
 | muttrc             | [2024-04-22](https://github.com/neomutt/tree-sitter-muttrc)                         |
 | nasl               | [2022-07-26](https://github.com/nichtsfrei/tree-sitter-nasl)                        |
 | nasm               | [2024-05-03](https://github.com/naclsn/tree-sitter-nasm)                            |
 | navi               | [2024-05-13](https://github.com/navi-language/tree-sitter-navi)                     |
 | navi-stream        | [2024-04-12](https://github.com/navi-language/tree-sitter-navi-stream)              |
 | newick             | [2024-02-12](https://github.com/delehef/tree-sitter-newick)                         |
+| nextflow           | [2024-06-07](https://github.com/edmundmiller/tree-sitter-nextflow)                  |
 | nginx              | [2024-04-06](https://gitlab.com/joncoole/tree-sitter-nginx)                         |
 | nickel             | [2024-06-04](https://github.com/nickel-lang/tree-sitter-nickel)                     |
 | nim                | [2024-04-17](https://github.com/alaviss/tree-sitter-nim)                            |
@@ -256,6 +260,7 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | ocamllex           | [2023-07-27](https://github.com/314eter/tree-sitter-ocamllex)                       |
 | odin               | [2024-05-21](https://github.com/tree-sitter-grammars/tree-sitter-odin)              |
 | ohm                | [2024-03-24](https://github.com/novusnota/tree-sitter-ohm)                          |
+| onyx               | [2024-06-08](https://github.com/brendanfh/tree-sitter-onyx)                         |
 | opencl             | [2023-03-30](https://github.com/lefp/tree-sitter-opencl)                            |
 | openscad           | [2024-03-26](https://github.com/bollian/tree-sitter-openscad)                       |
 | org                | [2024-04-20](https://github.com/nvim-orgmode/tree-sitter-org)                       |
@@ -328,6 +333,7 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | scheme             | [2024-04-12](https://github.com/6cdh/tree-sitter-scheme)                            |
 | scss               | [2022-02-03](https://github.com/serenadeai/tree-sitter-scss)                        |
 | sdml               | [2024-05-20](https://github.com/sdm-lang/tree-sitter-sdml)                          |
+| semver             | [2024-01-20](https://github.com/uselessscat/tree-sitter-semver)                     |
 | slang              | [2024-05-28](https://github.com/tree-sitter-grammars/tree-sitter-slang)             |
 | slint              | [2024-06-03](https://github.com/slint-ui/tree-sitter-slint)                         |
 | smali              | [2024-05-05](https://github.com/tree-sitter-grammars/tree-sitter-smali)             |
@@ -343,10 +349,10 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | spade              | [2024-05-26](https://gitlab.com/spade-lang/tree-sitter-spade)                       |
 | sparql             | [2021-08-16](https://github.com/GordianDziwis/tree-sitter-sparql)                   |
 | spicedb            | [2024-02-08](https://github.com/authzed/tree-sitter-spicedb)                        |
-| sql                | [2024-06-05](https://github.com/DerekStride/tree-sitter-sql)                        |
+| sql                | [2024-06-07](https://github.com/DerekStride/tree-sitter-sql)                        |
 | sql-bigquery       | [2024-05-27](https://github.com/takegue/tree-sitter-sql-bigquery)                   |
 | squirrel           | [2024-05-05](https://github.com/tree-sitter-grammars/tree-sitter-squirrel)          |
-| ssh-client-config  | [2024-06-05](https://github.com/metio/tree-sitter-ssh-client-config)                |
+| ssh-client-config  | [2024-06-07](https://github.com/metio/tree-sitter-ssh-client-config)                |
 | ssh-config         | [2024-04-19](https://github.com/tree-sitter-grammars/tree-sitter-ssh-config)        |
 | starlark           | [2024-05-25](https://github.com/tree-sitter-grammars/tree-sitter-starlark)          |
 | strace             | [2023-10-29](https://github.com/sigmaSd/tree-sitter-strace)                         |
@@ -357,7 +363,7 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | surrealdb          | [2024-02-20](https://github.com/DariusCorvus/tree-sitter-surrealdb)                 |
 | svelte             | [2024-04-10](https://github.com/tree-sitter-grammars/tree-sitter-svelte)            |
 | sway               | [2023-09-06](https://github.com/FuelLabs/tree-sitter-sway)                          |
-| swift              | [2024-05-28](https://github.com/alex-pinkus/tree-sitter-swift)                      |
+| swift              | [2024-06-08](https://github.com/alex-pinkus/tree-sitter-swift)                      |
 | sxhkdrc            | [2022-08-31](https://github.com/RaafatTurki/tree-sitter-sxhkdrc)                    |
 | syncat-stylesheet  | [2024-04-28](https://github.com/foxfriends/syncat)                                  |
 | systemrdl          | [2024-05-12](https://github.com/SystemRDL/tree-sitter-systemrdl)                    |
@@ -405,7 +411,7 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | vhdl               | [2022-01-09](https://github.com/teburd/tree-sitter-vhdl)                            |
 | vhs                | [2024-04-24](https://github.com/charmbracelet/tree-sitter-vhs)                      |
 | vim                | [2024-04-22](https://github.com/tree-sitter-grammars/tree-sitter-vim)               |
-| vimdoc             | [2024-06-04](https://github.com/neovim/tree-sitter-vimdoc)                          |
+| vimdoc             | [2024-06-08](https://github.com/neovim/tree-sitter-vimdoc)                          |
 | vue                | [2024-03-26](https://github.com/tree-sitter-grammars/tree-sitter-vue/tree/main)     |
 | wast               | [2022-05-17](https://github.com/wasm-lsp/tree-sitter-wasm)                          |
 | wat                | [2022-05-17](https://github.com/wasm-lsp/tree-sitter-wasm)                          |
@@ -428,5 +434,6 @@ nix build github:ratson/nix-treesitter#tree-sitter-c
 | zathurarc          | [2024-05-28](https://github.com/Freed-Wu/tree-sitter-zathurarc)                     |
 | zeek               | [2024-06-03](https://github.com/zeek/tree-sitter-zeek)                              |
 | zig                | [2023-04-25](https://github.com/maxxnino/tree-sitter-zig)                           |
+| zscript            | [2024-06-08](https://github.com/dastrukar/tree-sitter-zscript)                      |
 
 <!--grammars-->

@@ -61,7 +61,7 @@
             "systemrdl"
           ];
           findLocation = k: if hasAttr k locations then locations.${k} else null;
-          inputVersion = input: "${builtins.substring 0 8 input.lastModifiedDate}.${input.shortRev}";
+          inputVersion = input: "0.0.0+date=${builtins.substring 0 8 input.lastModifiedDate}_${input.shortRev}";
           removeTsPrefix = s: removePrefix "tree-sitter-" s;
           grammars = lib.mapAttrs'
             (k: input: nameValuePair k (pkgs:

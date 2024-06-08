@@ -1,4 +1,12 @@
-# Nix tree-sitter parsers
+# Nix Tree-sitter parsers
+
+<!--stat-->
+
+As of 2024-06-08, this project supports 303 more
+[`tree-sitter-grammars`](https://search.nixos.org/packages?query=tree-sitter-grammars.)
+than `nixpkgs`.
+
+<!--stat-->
 
 ## Usage
 

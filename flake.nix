@@ -116,6 +116,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    tree-sitter-abap = {
+      url = "github:mkoval1/tree-sitter-abap";
+      flake = false;
+    };
     tree-sitter-actionscript = {
       url = "github:Rileran/tree-sitter-actionscript";
       flake = false;
@@ -134,6 +138,10 @@
     };
     tree-sitter-aidl = {
       url = "github:AndroidIDEOfficial/tree-sitter-aidl";
+      flake = false;
+    };
+    tree-sitter-aiken = {
+      url = "github:aiken-lang/tree-sitter-aiken";
       flake = false;
     };
     tree-sitter-angular = {
@@ -240,6 +248,10 @@
       url = "github:tree-sitter/tree-sitter-c-sharp";
       flake = false;
     };
+    tree-sitter-c3 = {
+      url = "github:cbuttner/tree-sitter-c3";
+      flake = false;
+    };
     tree-sitter-cabal = {
       url = "github:thomasvergne/tree-sitter-cabal";
       flake = false;
@@ -262,6 +274,10 @@
     };
     tree-sitter-ccomment = {
       url = "github:mozilla/rust-code-analysis";
+      flake = false;
+    };
+    tree-sitter-cds = {
+      url = "github:cap-js-community/tree-sitter-cds";
       flake = false;
     };
     tree-sitter-cel = {
@@ -290,10 +306,6 @@
     };
     tree-sitter-coalton = {
       url = "github:coalton-lang/tree-sitter-coalton";
-      flake = false;
-    };
-    tree-sitter-cobol = {
-      url = "github:yutaro-sakamoto/tree-sitter-cobol";
       flake = false;
     };
     tree-sitter-comment = {
@@ -366,6 +378,10 @@
     };
     tree-sitter-dbml = {
       url = "github:dynamotn/tree-sitter-dbml";
+      flake = false;
+    };
+    tree-sitter-dbspec = {
+      url = "github:immortalvm/tree-sitter-dbspec";
       flake = false;
     };
     tree-sitter-devicetree = {
@@ -480,6 +496,10 @@
       url = "github:alexmozaidze/tree-sitter-fennel";
       flake = false;
     };
+    tree-sitter-fga = {
+      url = "github:matoous/tree-sitter-fga";
+      flake = false;
+    };
     tree-sitter-fidl = {
       url = "github:google/tree-sitter-fidl";
       flake = false;
@@ -522,6 +542,10 @@
     };
     tree-sitter-fsharp = {
       url = "github:ionide/tree-sitter-fsharp";
+      flake = false;
+    };
+    tree-sitter-ftd = {
+      url = "github:fastn-stack/tree-sitter-ftd";
       flake = false;
     };
     tree-sitter-func = {
@@ -740,6 +764,10 @@
       url = "github:justinmk/tree-sitter-ini";
       flake = false;
     };
+    tree-sitter-ink = {
+      url = "github:wldmr/tree-sitter-ink";
+      flake = false;
+    };
     tree-sitter-inko = {
       url = "github:inko-lang/tree-sitter-inko";
       flake = false;
@@ -948,10 +976,6 @@
       url = "github:grahambates/tree-sitter-m68k";
       flake = false;
     };
-    tree-sitter-madlib = {
-      url = "github:madlib-lang/tree-sitter-madlib";
-      flake = false;
-    };
     tree-sitter-magik = {
       url = "github:krn-robin/tree-sitter-magik";
       flake = false;
@@ -974,6 +998,10 @@
     };
     tree-sitter-mediawiki = {
       url = "github:Ordoviz/tree-sitter-mediawiki";
+      flake = false;
+    };
+    tree-sitter-melody = {
+      url = "github:abiriadev/tree-sitter-melody";
       flake = false;
     };
     tree-sitter-menhir = {
@@ -1002,6 +1030,10 @@
     };
     tree-sitter-moshell = {
       url = "github:moshell-lang/tree-sitter-moshell";
+      flake = false;
+    };
+    tree-sitter-motoko = {
+      url = "github:polychromatist/tree-sitter-motoko";
       flake = false;
     };
     tree-sitter-move = {
@@ -1038,10 +1070,6 @@
     };
     tree-sitter-newick = {
       url = "github:delehef/tree-sitter-newick";
-      flake = false;
-    };
-    tree-sitter-nextflow = {
-      url = "github:edmundmiller/tree-sitter-nextflow";
       flake = false;
     };
     tree-sitter-nginx = {
@@ -1174,6 +1202,10 @@
     };
     tree-sitter-plume = {
       url = "github:plume-lang/tree-sitter-plume";
+      flake = false;
+    };
+    tree-sitter-plymouth-script = {
+      url = "github:liushuyu/tree-sitter-plymouth-script";
       flake = false;
     };
     tree-sitter-po = {
@@ -1324,6 +1356,10 @@
       url = "github:rescript-lang/tree-sitter-rescript";
       flake = false;
     };
+    tree-sitter-restedlang = {
+      url = "github:Gnarus-G/tree-sitter-restedlang";
+      flake = false;
+    };
     tree-sitter-rifleconfig = {
       url = "github:seanbreckenridge/tree-sitter-rifleconfig";
       flake = false;
@@ -1337,7 +1373,7 @@
       flake = false;
     };
     tree-sitter-roc = {
-      url = "github:nat-418/tree-sitter-roc";
+      url = "github:faldor20/tree-sitter-roc";
       flake = false;
     };
     tree-sitter-ron = {
@@ -1372,6 +1408,10 @@
       url = "github:tree-sitter/tree-sitter-rust";
       flake = false;
     };
+    tree-sitter-sasm = {
+      url = "github:huntiep/tree-sitter-sasm";
+      flake = false;
+    };
     tree-sitter-satysfi = {
       url = "github:monaqa/tree-sitter-satysfi";
       flake = false;
@@ -1404,8 +1444,16 @@
       url = "github:uselessscat/tree-sitter-semver";
       flake = false;
     };
+    tree-sitter-skbdrc = {
+      url = "github:starkwm/tree-sitter-skbdrc";
+      flake = false;
+    };
     tree-sitter-slang = {
       url = "github:tree-sitter-grammars/tree-sitter-slang";
+      flake = false;
+    };
+    tree-sitter-slim = {
+      url = "github:kolen/tree-sitter-slim";
       flake = false;
     };
     tree-sitter-slint = {
@@ -1474,6 +1522,10 @@
     };
     tree-sitter-ssh-config = {
       url = "github:tree-sitter-grammars/tree-sitter-ssh-config";
+      flake = false;
+    };
+    tree-sitter-stan = {
+      url = "github:WardBrian/tree-sitter-stan";
       flake = false;
     };
     tree-sitter-starlark = {
@@ -1640,6 +1692,10 @@
       url = "github:shnarazk/tree-sitter-uiua";
       flake = false;
     };
+    tree-sitter-umka = {
+      url = "github:thacuber2a03/tree-sitter-umka";
+      flake = false;
+    };
     tree-sitter-ungrammar = {
       url = "github:tree-sitter-grammars/tree-sitter-ungrammar";
       flake = false;
@@ -1685,7 +1741,7 @@
       flake = false;
     };
     tree-sitter-vhdl = {
-      url = "github:teburd/tree-sitter-vhdl";
+      url = "github:jpt13653903/tree-sitter-vhdl";
       flake = false;
     };
     tree-sitter-vhs = {
@@ -1734,6 +1790,10 @@
     };
     tree-sitter-wit = {
       url = "github:liamwh/tree-sitter-wit";
+      flake = false;
+    };
+    tree-sitter-witcherscript = {
+      url = "github:SpontanCombust/tree-sitter-witcherscript";
       flake = false;
     };
     tree-sitter-wren = {

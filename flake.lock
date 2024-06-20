@@ -2305,15 +2305,15 @@
       "locked": {
         "lastModified": 1701129035,
         "narHash": "sha256-xs0M5MvgatWLMMZ1FqEngS7sWUvpLDUTM3qAeWWBoL4=",
-        "ref": "refs/heads/master",
+        "owner": "~nbsp",
+        "repo": "tree-sitter-gemini",
         "rev": "b60a42df3f76bd4e8f988465309d705a007dc506",
-        "revCount": 10,
-        "type": "git",
-        "url": "https://git.sr.ht/~nbsp/tree-sitter-gemini"
+        "type": "sourcehut"
       },
       "original": {
-        "type": "git",
-        "url": "https://git.sr.ht/~nbsp/tree-sitter-gemini"
+        "owner": "~nbsp",
+        "repo": "tree-sitter-gemini",
+        "type": "sourcehut"
       }
     },
     "tree-sitter-git-commit": {
@@ -5699,15 +5699,15 @@
       "locked": {
         "lastModified": 1690293405,
         "narHash": "sha256-2ubRvjpvRJEBZXpM7ZIkWAwSZARCzP/klydQ6IVpCSk=",
-        "ref": "refs/heads/main",
+        "owner": "~rockorager",
+        "repo": "tree-sitter-scfg",
         "rev": "6deae0cbb458c849a4d1e2985093e9c9c32d7fd0",
-        "revCount": 6,
-        "type": "git",
-        "url": "https://git.sr.ht/~rockorager/tree-sitter-scfg"
+        "type": "sourcehut"
       },
       "original": {
-        "type": "git",
-        "url": "https://git.sr.ht/~rockorager/tree-sitter-scfg"
+        "owner": "~rockorager",
+        "repo": "tree-sitter-scfg",
+        "type": "sourcehut"
       }
     },
     "tree-sitter-scheme": {
@@ -7204,15 +7204,15 @@
       "locked": {
         "lastModified": 1692120850,
         "narHash": "sha256-CU08QY4X/u4W4AEkK+gUmy5P8/XoBHDJmWX1vdGjmsI=",
-        "ref": "refs/heads/master",
+        "owner": "~jummit",
+        "repo": "tree-sitter-wren",
         "rev": "6748694be32f11e7ec6b5faeb1b48ca6156d4e06",
-        "revCount": 27,
-        "type": "git",
-        "url": "https://git.sr.ht/~jummit/tree-sitter-wren"
+        "type": "sourcehut"
       },
       "original": {
-        "type": "git",
-        "url": "https://git.sr.ht/~jummit/tree-sitter-wren"
+        "owner": "~jummit",
+        "repo": "tree-sitter-wren",
+        "type": "sourcehut"
       }
     },
     "tree-sitter-xcompose": {
@@ -7236,15 +7236,15 @@
       "locked": {
         "lastModified": 1672772834,
         "narHash": "sha256-V5ngyO6RfzsdbFYl8YOl0va4A79mYnobtvj9tDOQgbo=",
-        "ref": "refs/heads/master",
+        "owner": "~xigoi",
+        "repo": "tree-sitter-xidoc",
         "rev": "d24aea769493c19d3b55ad682e0d459fac27ee5c",
-        "revCount": 6,
-        "type": "git",
-        "url": "https://git.sr.ht/~xigoi/tree-sitter-xidoc"
+        "type": "sourcehut"
       },
       "original": {
-        "type": "git",
-        "url": "https://git.sr.ht/~xigoi/tree-sitter-xidoc"
+        "owner": "~xigoi",
+        "repo": "tree-sitter-xidoc",
+        "type": "sourcehut"
       }
     },
     "tree-sitter-xit": {

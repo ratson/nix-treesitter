@@ -573,7 +573,7 @@
       flake = false;
     };
     tree-sitter-gemini = {
-      url = "git+https://git.sr.ht/~nbsp/tree-sitter-gemini";
+      url = "sourcehut:~nbsp/tree-sitter-gemini";
       flake = false;
     };
     tree-sitter-git-commit = {
@@ -1421,7 +1421,7 @@
       flake = false;
     };
     tree-sitter-scfg = {
-      url = "git+https://git.sr.ht/~rockorager/tree-sitter-scfg";
+      url = "sourcehut:~rockorager/tree-sitter-scfg";
       flake = false;
     };
     tree-sitter-scheme = {
@@ -1797,7 +1797,7 @@
       flake = false;
     };
     tree-sitter-wren = {
-      url = "git+https://git.sr.ht/~jummit/tree-sitter-wren";
+      url = "sourcehut:~jummit/tree-sitter-wren";
       flake = false;
     };
     tree-sitter-xcompose = {
@@ -1805,7 +1805,7 @@
       flake = false;
     };
     tree-sitter-xidoc = {
-      url = "git+https://git.sr.ht/~xigoi/tree-sitter-xidoc";
+      url = "sourcehut:~xigoi/tree-sitter-xidoc";
       flake = false;
     };
     tree-sitter-xit = {

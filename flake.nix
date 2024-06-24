@@ -9,79 +9,128 @@
 
       packages =
         let
-          inherit (lib) filterAttrs hasAttr hasPrefix listToAttrs nameValuePair removePrefix;
-          aliasInputs = {
-            tree-sitter-dtd = inputs.tree-sitter-xml;
-            tree-sitter-eprime = inputs.tree-sitter-datazinc;
-            tree-sitter-loongdoc-inline = inputs.tree-sitter-loongdoc;
-            tree-sitter-markdown-inline = inputs.tree-sitter-markdown;
-            tree-sitter-minizinc = inputs.tree-sitter-datazinc;
-            tree-sitter-ocaml-interface = inputs.tree-sitter-ocaml;
-            tree-sitter-ocaml-type = inputs.tree-sitter-ocaml;
-            tree-sitter-php-only = inputs.tree-sitter-php;
-            tree-sitter-psv = inputs.tree-sitter-csv;
-            tree-sitter-rust-with-rstml = inputs.tree-sitter-rstml;
-            tree-sitter-soql = inputs.tree-sitter-apex;
-            tree-sitter-sosl = inputs.tree-sitter-apex;
-            tree-sitter-terraform = inputs.tree-sitter-hcl;
-            tree-sitter-tsv = inputs.tree-sitter-csv;
-            tree-sitter-tsx = inputs.tree-sitter-typescript;
-            tree-sitter-wast = inputs.tree-sitter-wat;
+          inherit (lib) filterAttrs hasAttr hasPrefix listToAttrs mapAttrs' nameValuePair removePrefix;
+          grammarArgs = {
+            apex = {
+              location = "apex";
+            };
+            blame = {
+              location = "ql/buramu/tree-sitter-blame";
+            };
+            calyx = { location = "calyx-lsp/tree-sitter-calyx"; };
+            carbon = {
+              generate = true;
+              location = "utils/treesitter";
+            };
+            ccomment = { location = "tree-sitter-ccomment"; };
+            csv = { location = "csv"; };
+            darklang = {
+              generate = true;
+              location = "tree-sitter-darklang";
+            };
+            datazinc = { location = "parsers/tree-sitter-datazinc"; };
+            dotvvm = {
+              generate = true;
+              location = "src/tree-sitter-dotvvm";
+            };
+            dtd = {
+              location = "dtd";
+              src = inputs.tree-sitter-xml;
+            };
+            eprime = {
+              location = "parsers/tree-sitter-eprime";
+              src = inputs.tree-sitter-datazinc;
+            };
+            esl37 = { location = "tree-sitter-esl37"; };
+            loongdoc = { location = "tree-sitter-loongdoc"; };
+            loongdoc-inline = {
+              location = "tree-sitter-loongdoc_inline";
+              src = inputs.tree-sitter-loongdoc;
+            };
+            lura = { location = "tree-sitter-lura"; };
+            markdown-inline = {
+              src = inputs.tree-sitter-markdown;
+            };
+            mers = { location = "tree-sitter-mers"; };
+            minizinc = {
+              location = "parsers/tree-sitter-minizinc";
+              src = inputs.tree-sitter-datazinc;
+            };
+            moshell = {
+              generate = true;
+            };
+            mozcpp = { location = "tree-sitter-mozcpp"; };
+            mozjs = { location = "tree-sitter-mozjs"; };
+            nv = { location = "extensions/tree-sitter-nv"; };
+            ocaml-interface = { src = inputs.tree-sitter-ocaml; };
+            ocaml-type = {
+              location = "grammars/type";
+              src = inputs.tree-sitter-ocaml;
+            };
+            omnetpp-msg = {
+              generate = true;
+              location = "omnetpp-msg";
+            };
+            php-only = {
+              location = "php_only";
+              src = inputs.tree-sitter-php;
+            };
+            preproc = { location = "tree-sitter-preproc"; };
+            psv = {
+              location = "psv";
+              src = inputs.tree-sitter-csv;
+            };
+            rescript = {
+              generate = true;
+            };
+            rstml = { location = "rstml"; };
+            rtf = {
+              generate = true;
+            };
+            rust-with-rstml = {
+              location = "rust_with_rstml";
+              src = inputs.tree-sitter-rstml;
+            };
+            soql = {
+              location = "soql";
+              src = inputs.tree-sitter-apex;
+            };
+            sosl = {
+              location = "sosl";
+              src = inputs.tree-sitter-apex;
+            };
+            stilts = { location = "tooling/tree-sitter-stilts"; };
+            swift = {
+              generate = true;
+            };
+            syncat-stylesheet = { location = "tree-sitter-syncat-stylesheet"; };
+            systemrdl = {
+              generate = true;
+            };
+            terraform = {
+              location = "dialects/terraform";
+              src = inputs.tree-sitter-hcl;
+            };
+            tsv = {
+              location = "tsv";
+              src = inputs.tree-sitter-csv;
+            };
+            tsx = {
+              src = inputs.tree-sitter-typescript;
+            };
+            v = { location = "tree_sitter_v"; };
+            wast = {
+              location = "wast";
+              src = inputs.tree-sitter-wat;
+            };
+            wat = { location = "wat"; };
+            xml = { location = "xml"; };
           };
-          locations = {
-            apex = "apex";
-            blame = "ql/buramu/tree-sitter-blame";
-            calyx = "calyx-lsp/tree-sitter-calyx";
-            ccomment = "tree-sitter-ccomment";
-            csv = "csv";
-            carbon = "utils/treesitter";
-            darklang = "tree-sitter-darklang";
-            datazinc = "parsers/tree-sitter-datazinc";
-            dtd = "dtd";
-            dotvvm = "src/tree-sitter-dotvvm";
-            eprime = "parsers/tree-sitter-eprime";
-            esl37 = "tree-sitter-esl37";
-            loongdoc = "tree-sitter-loongdoc";
-            loongdoc-inline = "tree-sitter-loongdoc_inline";
-            lura = "tree-sitter-lura";
-            mers = "tree-sitter-mers";
-            minizinc = "parsers/tree-sitter-minizinc";
-            mozcpp = "tree-sitter-mozcpp";
-            mozjs = "tree-sitter-mozjs";
-            nv = "extensions/tree-sitter-nv";
-            ocaml-type = "grammars/type";
-            omnetpp-msg = "omnetpp-msg";
-            php-only = "php_only";
-            preproc = "tree-sitter-preproc";
-            psv = "psv";
-            rstml = "rstml";
-            rust-with-rstml = "rust_with_rstml";
-            soql = "soql";
-            sosl = "sosl";
-            stilts = "tooling/tree-sitter-stilts";
-            syncat-stylesheet = "tree-sitter-syncat-stylesheet";
-            terraform = "dialects/terraform";
-            tsv = "tsv";
-            v = "tree_sitter_v";
-            wast = "wast";
-            wat = "wat";
-            xml = "xml";
-          };
-          needGenerate = [
-            "carbon"
-            "darklang"
-            "dotvvm"
-            "moshell"
-            "omnetpp-msg"
-            "rescript"
-            "rtf"
-            "swift"
-            "systemrdl"
-          ];
-          findLocation = k: if hasAttr k locations then locations.${k} else null;
+          aliasInputs = mapAttrs' (k: v: nameValuePair "tree-sitter-${k}" v.src) (filterAttrs (_: v: hasAttr "src" v) grammarArgs);
           inputVersion = input: "0.0.0+date=${builtins.substring 0 8 input.lastModifiedDate}_${input.shortRev}";
           removeTsPrefix = s: removePrefix "tree-sitter-" s;
-          grammars = lib.mapAttrs'
+          getGrammarArgs = k: if hasAttr k grammarArgs then grammarArgs.${k} else { };
+          grammars = mapAttrs'
             (k: input: nameValuePair k (pkgs:
               if hasAttr k pkgs.tree-sitter-grammars then
                 pkgs.tree-sitter-grammars.${k}.overrideAttrs
@@ -90,14 +139,11 @@
                     version = inputVersion input;
                   })
               else
-                pkgs.tree-sitter.buildGrammar
-                  {
-                    language = k;
-                    location = findLocation (removeTsPrefix k);
-                    generate = lib.elem (removeTsPrefix k) needGenerate;
-                    src = input;
-                    version = inputVersion input;
-                  }))
+                pkgs.tree-sitter.buildGrammar ({
+                  language = k;
+                  src = input;
+                  version = inputVersion input;
+                } // getGrammarArgs (removeTsPrefix k))))
             ((filterAttrs (k: _: hasPrefix "tree-sitter-" k) inputs) // aliasInputs);
         in
         grammars // {

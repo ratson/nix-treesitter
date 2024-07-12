@@ -14,6 +14,9 @@
             apex = {
               location = "apex";
             };
+            asm6502 = {
+              generate = true;
+            };
             blame = {
               location = "ql/buramu/tree-sitter-blame";
             };
@@ -61,7 +64,7 @@
             };
             mozcpp = { location = "tree-sitter-mozcpp"; };
             mozjs = { location = "tree-sitter-mozjs"; };
-            nv = { location = "extensions/tree-sitter-nv"; };
+            nv = { location = "lang/extensions/tree-sitter-nv"; };
             ocaml-interface = { src = inputs.tree-sitter-ocaml; };
             ocaml-type = {
               location = "grammars/type";
@@ -90,6 +93,9 @@
             rust-with-rstml = {
               location = "rust_with_rstml";
               src = inputs.tree-sitter-rstml;
+            };
+            scfg = {
+              generate = true;
             };
             soql = {
               location = "soql";
@@ -211,6 +217,10 @@
       url = "github:aiken-lang/tree-sitter-aiken";
       flake = false;
     };
+    tree-sitter-amber = {
+      url = "github:amber-lang/tree-sitter-amber";
+      flake = false;
+    };
     tree-sitter-angular = {
       url = "github:dlvandenberg/tree-sitter-angular";
       flake = false;
@@ -233,6 +243,10 @@
     };
     tree-sitter-asm = {
       url = "github:RubixDev/tree-sitter-asm";
+      flake = false;
+    };
+    tree-sitter-asm6502 = {
+      url = "github:babasbot/tree-sitter-asm6502";
       flake = false;
     };
     tree-sitter-astro = {
@@ -359,12 +373,20 @@
       url = "github:bufbuild/tree-sitter-cel";
       flake = false;
     };
+    tree-sitter-cfml = {
+      url = "github:cfmleditor/tree-sitter-cfml";
+      flake = false;
+    };
     tree-sitter-chatito = {
       url = "github:tree-sitter-grammars/tree-sitter-chatito";
       flake = false;
     };
     tree-sitter-cicada = {
       url = "github:Cicada-Software/tree-sitter-cicada";
+      flake = false;
+    };
+    tree-sitter-circom = {
+      url = "github:Decurity/tree-sitter-circom";
       flake = false;
     };
     tree-sitter-clingo = {
@@ -385,6 +407,10 @@
     };
     tree-sitter-coalton = {
       url = "github:coalton-lang/tree-sitter-coalton";
+      flake = false;
+    };
+    tree-sitter-cognate = {
+      url = "github:hedyhli/tree-sitter-cognate";
       flake = false;
     };
     tree-sitter-comment = {
@@ -595,6 +621,10 @@
       url = "github:FacilityApi/tree-sitter-facility";
       flake = false;
     };
+    tree-sitter-fastbuild = {
+      url = "github:pinbraerts/tree-sitter-fastbuild";
+      flake = false;
+    };
     tree-sitter-faust = {
       url = "github:khiner/tree-sitter-faust";
       flake = false;
@@ -609,6 +639,10 @@
     };
     tree-sitter-fidl = {
       url = "github:google/tree-sitter-fidl";
+      flake = false;
+    };
+    tree-sitter-fin = {
+      url = "github:fin-org/tree-sitter-fin";
       flake = false;
     };
     tree-sitter-firrtl = {
@@ -757,6 +791,10 @@
     };
     tree-sitter-graphql = {
       url = "github:bkegley/tree-sitter-graphql";
+      flake = false;
+    };
+    tree-sitter-gren = {
+      url = "github:MaeBrooks/tree-sitter-gren";
       flake = false;
     };
     tree-sitter-gritql = {
@@ -1568,7 +1606,7 @@
       flake = false;
     };
     tree-sitter-scfg = {
-      url = "sourcehut:~rockorager/tree-sitter-scfg";
+      url = "github:rockorager/tree-sitter-scfg";
       flake = false;
     };
     tree-sitter-scheme = {
@@ -1921,6 +1959,10 @@
     };
     tree-sitter-vimdoc = {
       url = "github:neovim/tree-sitter-vimdoc";
+      flake = false;
+    };
+    tree-sitter-void = {
+      url = "github:ge0mk/tree-sitter-void";
       flake = false;
     };
     tree-sitter-vue = {

@@ -14,6 +14,11 @@
             apex = {
               location = "apex";
             };
+            asciidoc = { location = "tree-sitter-asciidoc"; };
+            asciidoc-inline = {
+              location = "tree-sitter-asciidoc_inline";
+              src = inputs.tree-sitter-asciidoc;
+            };
             asm6502 = {
               generate = true;
             };
@@ -43,17 +48,21 @@
               location = "dtd";
               src = inputs.tree-sitter-xml;
             };
+            epics-cmd = { location = "epics-cmd"; };
+            epics-db = {
+              location = "epics-db";
+              src = inputs.tree-sitter-epics-cmd;
+            };
+            epics-msi-template = {
+              location = "epics-msi-template";
+              src = inputs.tree-sitter-epics-cmd;
+            };
             eprime = {
               location = "parsers/tree-sitter-eprime";
               src = inputs.tree-sitter-datazinc;
             };
             fsharp = { location = "fsharp"; };
             fsharp_signature = { location = "fsharp_signature"; };
-            loongdoc = { location = "tree-sitter-loongdoc"; };
-            loongdoc-inline = {
-              location = "tree-sitter-loongdoc_inline";
-              src = inputs.tree-sitter-loongdoc;
-            };
             lura = { location = "tree-sitter-lura"; };
             markdown-inline = {
               src = inputs.tree-sitter-markdown;
@@ -100,6 +109,10 @@
               generate = true;
             };
             scilab = { generate = true; };
+            snl = {
+              location = "snl";
+              src = inputs.tree-sitter-epics-cmd;
+            };
             soql = {
               location = "soql";
               src = inputs.tree-sitter-apex;
@@ -109,6 +122,10 @@
               src = inputs.tree-sitter-apex;
             };
             stilts = { location = "tooling/tree-sitter-stilts"; };
+            streamdevice-proto = {
+              location = "streamdevice-proto";
+              src = inputs.tree-sitter-epics-cmd;
+            };
             swift = {
               generate = true;
             };
@@ -256,6 +273,10 @@
     };
     tree-sitter-arduino = {
       url = "github:tree-sitter-grammars/tree-sitter-arduino";
+      flake = false;
+    };
+    tree-sitter-asciidoc = {
+      url = "github:cathaysia/tree-sitter-asciidoc";
       flake = false;
     };
     tree-sitter-asm = {
@@ -650,6 +671,10 @@
       url = "github:tree-sitter/tree-sitter-embedded-template";
       flake = false;
     };
+    tree-sitter-epics-cmd = {
+      url = "github:epics-extensions/tree-sitter-epics";
+      flake = false;
+    };
     tree-sitter-epscript = {
       url = "github:zuhanit/tree-sitter-epscript";
       flake = false;
@@ -926,6 +951,10 @@
       url = "github:winston0410/tree-sitter-hjson";
       flake = false;
     };
+    tree-sitter-hl7 = {
+      url = "github:hamaluik/tree-sitter-hl7";
+      flake = false;
+    };
     tree-sitter-hlsl = {
       url = "github:tree-sitter-grammars/tree-sitter-hlsl";
       flake = false;
@@ -968,6 +997,10 @@
     };
     tree-sitter-hylo = {
       url = "github:natsukagami/tree-sitter-hylo";
+      flake = false;
+    };
+    tree-sitter-hyperlink = {
+      url = "github:savetheclocktower/tree-sitter-hyperlink";
       flake = false;
     };
     tree-sitter-hyprlang = {
@@ -1180,10 +1213,6 @@
     };
     tree-sitter-log = {
       url = "github:Tudyx/tree-sitter-log";
-      flake = false;
-    };
-    tree-sitter-loongdoc = {
-      url = "github:cathaysia/tree-sitter-loongdoc";
       flake = false;
     };
     tree-sitter-lox = {
@@ -1714,6 +1743,10 @@
       url = "github:tree-sitter/tree-sitter-ruby";
       flake = false;
     };
+    tree-sitter-runescript = {
+      url = "github:2004Scape/tree-sitter-runescript";
+      flake = false;
+    };
     tree-sitter-rust = {
       url = "github:tree-sitter/tree-sitter-rust";
       flake = false;
@@ -1846,6 +1879,10 @@
       url = "github:tree-sitter-grammars/tree-sitter-ssh-config";
       flake = false;
     };
+    tree-sitter-st = {
+      url = "github:bortech/tree-sitter-st";
+      flake = false;
+    };
     tree-sitter-stan = {
       url = "github:WardBrian/tree-sitter-stan";
       flake = false;
@@ -1956,6 +1993,10 @@
     };
     tree-sitter-templ = {
       url = "github:vrischmann/tree-sitter-templ";
+      flake = false;
+    };
+    tree-sitter-tera = {
+      url = "github:uncenter/tree-sitter-tera";
       flake = false;
     };
     tree-sitter-textproto = {

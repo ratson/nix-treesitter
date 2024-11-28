@@ -2,13 +2,11 @@
   description = "Tree sitter grammars";
 
   outputs =
-    { flakelight, ... }@inputs:
-    flakelight ./. (
+    { conflake, ... }@inputs:
+    conflake ./. (
       { lib, ... }:
       {
         inherit inputs;
-
-        systems = lib.systems.flakeExposed;
 
         packages =
           let
@@ -243,37 +241,35 @@
               input: "0.0.0+date=${builtins.substring 0 8 input.lastModifiedDate}_${input.shortRev}";
             removeTsPrefix = s: removePrefix "tree-sitter-" s;
             getGrammarArgs = k: if hasAttr k grammarArgs then grammarArgs.${k} else { };
-            grammars = mapAttrs'
-              (
-                k: input:
-                  nameValuePair k (
-                    pkgs:
-                    if hasAttr k pkgs.tree-sitter-grammars then
-                      pkgs.tree-sitter-grammars.${k}.overrideAttrs
-                        (_: {
-                          src = input;
-                          version = inputVersion input;
-                        })
-                    else
-                      pkgs.tree-sitter.buildGrammar (
-                        {
-                          language = k;
-                          src = input;
-                          version = inputVersion input;
-                        }
-                        // getGrammarArgs (removeTsPrefix k)
-                      )
+            grammars = mapAttrs' (
+              k: input:
+              nameValuePair k (
+                pkgs:
+                if hasAttr k pkgs.tree-sitter-grammars then
+                  pkgs.tree-sitter-grammars.${k}.overrideAttrs (_: {
+                    src = input;
+                    version = inputVersion input;
+                  })
+                else
+                  pkgs.tree-sitter.buildGrammar (
+                    {
+                      language = k;
+                      src = input;
+                      version = inputVersion input;
+                    }
+                    // getGrammarArgs (removeTsPrefix k)
                   )
               )
-              ((filterAttrs (k: _: hasPrefix "tree-sitter-" k) inputs) // aliasInputs);
+            ) ((filterAttrs (k: _: hasPrefix "tree-sitter-" k) inputs) // aliasInputs);
           in
           grammars
           // {
             default =
-              { tree-sitter
-              , vimPlugins
-              , outputs'
-              , ...
+              {
+                tree-sitter,
+                vimPlugins,
+                outputs',
+                ...
               }:
               let
                 hasRev =
@@ -292,17 +288,15 @@
                   map (x: nameValuePair x.src.rev x) vimPlugins.nvim-treesitter.passthru.allGrammars
                 );
                 selfGrammars = lib.attrValues (filterAttrs (k: v: hasPrefix "tree-sitter-" k) outputs'.packages);
-                finalGrammars = map
-                  (
-                    x:
-                    if hasRev x revTs then
-                      revTs.${x.src.rev}
-                    else if hasRev x revVim then
-                      revVim.${x.src.rev}
-                    else
-                      x
-                  )
-                  selfGrammars;
+                finalGrammars = map (
+                  x:
+                  if hasRev x revTs then
+                    revTs.${x.src.rev}
+                  else if hasRev x revVim then
+                    revVim.${x.src.rev}
+                  else
+                    x
+                ) selfGrammars;
               in
               tree-sitter.withPlugins (
                 _: vimPlugins.nvim-treesitter.passthru.allGrammars ++ tree-sitter.allGrammars ++ finalGrammars
@@ -312,8 +306,8 @@
     );
 
   inputs = {
-    flakelight = {
-      url = "github:nix-community/flakelight";
+    conflake = {
+      url = "github:ratson/conflake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";

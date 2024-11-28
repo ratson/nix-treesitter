@@ -1,22 +1,22 @@
 {
   "nodes": {
-    "flakelight": {
+    "conflake": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1732697024,
-        "narHash": "sha256-GcLauDQQI4xO4vy3e2QxPneR86FsJ1ubAbFDlTyEZ9s=",
-        "owner": "nix-community",
-        "repo": "flakelight",
-        "rev": "1af817b5987e78b7a260dff6d62793716b98d794",
+        "lastModified": 1732807551,
+        "narHash": "sha256-mE5CElBJhKcNdmzNRJEU1NKr5gQFzUqizyJAq4vK8kY=",
+        "owner": "ratson",
+        "repo": "conflake",
+        "rev": "ee9d7eb50c009c1e61be8ca4423c7b42131a90a0",
         "type": "github"
       },
       "original": {
-        "owner": "nix-community",
-        "repo": "flakelight",
+        "owner": "ratson",
+        "repo": "conflake",
         "type": "github"
       }
     },
@@ -38,7 +38,7 @@
     },
     "root": {
       "inputs": {
-        "flakelight": "flakelight",
+        "conflake": "conflake",
         "nixpkgs": "nixpkgs",
         "tree-sitter-COBOL": "tree-sitter-COBOL",
         "tree-sitter-abap": "tree-sitter-abap",

@@ -1,206 +1,315 @@
 {
   description = "Tree sitter grammars";
 
-  outputs = { flakelight, ... }@inputs:
-    flakelight ./. ({ lib, ... }: {
-      inherit inputs;
+  outputs =
+    { flakelight, ... }@inputs:
+    flakelight ./. (
+      { lib, ... }:
+      {
+        inherit inputs;
 
-      systems = lib.systems.flakeExposed;
+        systems = lib.systems.flakeExposed;
 
-      packages =
-        let
-          inherit (lib) filterAttrs hasAttr hasPrefix listToAttrs mapAttrs' nameValuePair removePrefix;
-          grammarArgs = {
-            apex = {
-              location = "apex";
+        packages =
+          let
+            inherit (lib)
+              filterAttrs
+              hasAttr
+              hasPrefix
+              listToAttrs
+              mapAttrs'
+              nameValuePair
+              removePrefix
+              ;
+            grammarArgs = {
+              apex = {
+                location = "apex";
+              };
+              apparmor = {
+                generate = true;
+              };
+              asciidoc = {
+                location = "tree-sitter-asciidoc";
+              };
+              asciidoc-inline = {
+                location = "tree-sitter-asciidoc_inline";
+                src = inputs.tree-sitter-asciidoc;
+              };
+              asm6502 = {
+                generate = true;
+              };
+              blame = {
+                location = "ql/buramu/tree-sitter-blame";
+              };
+              calyx = {
+                location = "calyx-lsp/tree-sitter-calyx";
+              };
+              carbon = {
+                generate = true;
+                location = "utils/treesitter";
+              };
+              ccomment = {
+                location = "tree-sitter-ccomment";
+              };
+              cfml = {
+                location = "cfml";
+              };
+              cgsql = {
+                generate = true;
+              };
+              csv = {
+                location = "csv";
+              };
+              darklang = {
+                generate = true;
+                location = "tree-sitter-darklang";
+              };
+              datazinc = {
+                location = "parsers/tree-sitter-datazinc";
+              };
+              djot = {
+                location = "tree-sitter-djot";
+              };
+              djot-inline = {
+                location = "tree-sitter-djot-inline";
+              };
+              dotvvm = {
+                generate = true;
+                location = "src/tree-sitter-dotvvm";
+              };
+              dtd = {
+                location = "dtd";
+                src = inputs.tree-sitter-xml;
+              };
+              epics-cmd = {
+                location = "epics-cmd";
+              };
+              epics-db = {
+                location = "epics-db";
+                src = inputs.tree-sitter-epics-cmd;
+              };
+              epics-msi-template = {
+                location = "epics-msi-template";
+                src = inputs.tree-sitter-epics-cmd;
+              };
+              eprime = {
+                location = "parsers/tree-sitter-eprime";
+                src = inputs.tree-sitter-datazinc;
+              };
+              fsharp = {
+                location = "fsharp";
+              };
+              fsharp_signature = {
+                location = "fsharp_signature";
+              };
+              lura = {
+                location = "tree-sitter-lura";
+              };
+              man-db-config = {
+                generate = true;
+              };
+              markdown-inline = {
+                src = inputs.tree-sitter-markdown;
+              };
+              mers = {
+                location = "tree-sitter-mers";
+              };
+              minizinc = {
+                location = "parsers/tree-sitter-minizinc";
+                src = inputs.tree-sitter-datazinc;
+              };
+              moshell = {
+                generate = true;
+              };
+              mozcpp = {
+                location = "tree-sitter-mozcpp";
+              };
+              mozjs = {
+                location = "tree-sitter-mozjs";
+              };
+              nv = {
+                location = "extensions/tree-sitter";
+              };
+              ocaml-interface = {
+                src = inputs.tree-sitter-ocaml;
+              };
+              ocaml-type = {
+                location = "grammars/type";
+                src = inputs.tree-sitter-ocaml;
+              };
+              php-only = {
+                location = "php_only";
+                src = inputs.tree-sitter-php;
+              };
+              poweron = {
+                generate = true;
+              };
+              preproc = {
+                location = "tree-sitter-preproc";
+              };
+              problog = {
+                location = "grammars/problog";
+                src = inputs.tree-sitter-prolog;
+              };
+              prolog = {
+                location = "grammars/prolog";
+              };
+              psv = {
+                location = "psv";
+                src = inputs.tree-sitter-csv;
+              };
+              qunit = {
+                generate = true;
+              };
+              rescript = {
+                generate = true;
+              };
+              rstml = {
+                location = "rstml";
+              };
+              rtf = {
+                generate = true;
+              };
+              rust-with-rstml = {
+                location = "rust_with_rstml";
+                src = inputs.tree-sitter-rstml;
+              };
+              scfg = {
+                generate = true;
+              };
+              scilab = {
+                generate = true;
+              };
+              snl = {
+                location = "snl";
+                src = inputs.tree-sitter-epics-cmd;
+              };
+              soql = {
+                location = "soql";
+                src = inputs.tree-sitter-apex;
+              };
+              sosl = {
+                location = "sosl";
+                src = inputs.tree-sitter-apex;
+              };
+              stilts = {
+                location = "tooling/tree-sitter-stilts";
+              };
+              streamdevice-proto = {
+                location = "streamdevice-proto";
+                src = inputs.tree-sitter-epics-cmd;
+              };
+              swift = {
+                generate = true;
+              };
+              syncat-stylesheet = {
+                location = "tree-sitter-syncat-stylesheet";
+              };
+              systemrdl = {
+                generate = true;
+              };
+              terraform = {
+                location = "dialects/terraform";
+                src = inputs.tree-sitter-hcl;
+              };
+              tsv = {
+                location = "tsv";
+                src = inputs.tree-sitter-csv;
+              };
+              tsx = {
+                src = inputs.tree-sitter-typescript;
+              };
+              v = {
+                location = "tree_sitter_v";
+              };
+              wast = {
+                location = "wast";
+                src = inputs.tree-sitter-wat;
+              };
+              wat = {
+                location = "wat";
+              };
+              x12 = {
+                generate = true;
+              };
+              xml = {
+                location = "xml";
+              };
             };
-            asciidoc = { location = "tree-sitter-asciidoc"; };
-            asciidoc-inline = {
-              location = "tree-sitter-asciidoc_inline";
-              src = inputs.tree-sitter-asciidoc;
-            };
-            asm6502 = {
-              generate = true;
-            };
-            blame = {
-              location = "ql/buramu/tree-sitter-blame";
-            };
-            calyx = { location = "calyx-lsp/tree-sitter-calyx"; };
-            carbon = {
-              generate = true;
-              location = "utils/treesitter";
-            };
-            ccomment = { location = "tree-sitter-ccomment"; };
-            cfml = { location = "cfml"; };
-            csv = { location = "csv"; };
-            darklang = {
-              generate = true;
-              location = "tree-sitter-darklang";
-            };
-            datazinc = { location = "parsers/tree-sitter-datazinc"; };
-            djot = { location = "tree-sitter-djot"; };
-            djot-inline = { location = "tree-sitter-djot-inline"; };
-            dotvvm = {
-              generate = true;
-              location = "src/tree-sitter-dotvvm";
-            };
-            dtd = {
-              location = "dtd";
-              src = inputs.tree-sitter-xml;
-            };
-            epics-cmd = { location = "epics-cmd"; };
-            epics-db = {
-              location = "epics-db";
-              src = inputs.tree-sitter-epics-cmd;
-            };
-            epics-msi-template = {
-              location = "epics-msi-template";
-              src = inputs.tree-sitter-epics-cmd;
-            };
-            eprime = {
-              location = "parsers/tree-sitter-eprime";
-              src = inputs.tree-sitter-datazinc;
-            };
-            fsharp = { location = "fsharp"; };
-            fsharp_signature = { location = "fsharp_signature"; };
-            lura = { location = "tree-sitter-lura"; };
-            man-db-config = { generate = true; };
-            markdown-inline = {
-              src = inputs.tree-sitter-markdown;
-            };
-            mers = { location = "tree-sitter-mers"; };
-            minizinc = {
-              location = "parsers/tree-sitter-minizinc";
-              src = inputs.tree-sitter-datazinc;
-            };
-            moshell = {
-              generate = true;
-            };
-            mozcpp = { location = "tree-sitter-mozcpp"; };
-            mozjs = { location = "tree-sitter-mozjs"; };
-            nv = { location = "extensions/tree-sitter"; };
-            ocaml-interface = { src = inputs.tree-sitter-ocaml; };
-            ocaml-type = {
-              location = "grammars/type";
-              src = inputs.tree-sitter-ocaml;
-            };
-            php-only = {
-              location = "php_only";
-              src = inputs.tree-sitter-php;
-            };
-            poweron = { generate = true; };
-            preproc = { location = "tree-sitter-preproc"; };
-            psv = {
-              location = "psv";
-              src = inputs.tree-sitter-csv;
-            };
-            qunit = { generate = true; };
-            rescript = {
-              generate = true;
-            };
-            rstml = { location = "rstml"; };
-            rtf = {
-              generate = true;
-            };
-            rust-with-rstml = {
-              location = "rust_with_rstml";
-              src = inputs.tree-sitter-rstml;
-            };
-            scfg = {
-              generate = true;
-            };
-            scilab = { generate = true; };
-            snl = {
-              location = "snl";
-              src = inputs.tree-sitter-epics-cmd;
-            };
-            soql = {
-              location = "soql";
-              src = inputs.tree-sitter-apex;
-            };
-            sosl = {
-              location = "sosl";
-              src = inputs.tree-sitter-apex;
-            };
-            stilts = { location = "tooling/tree-sitter-stilts"; };
-            streamdevice-proto = {
-              location = "streamdevice-proto";
-              src = inputs.tree-sitter-epics-cmd;
-            };
-            swift = {
-              generate = true;
-            };
-            syncat-stylesheet = {
-              location = "tree-sitter-syncat-stylesheet";
-            };
-            systemrdl = {
-              generate = true;
-            };
-            terraform = {
-              location = "dialects/terraform";
-              src = inputs.tree-sitter-hcl;
-            };
-            tsv = {
-              location = "tsv";
-              src = inputs.tree-sitter-csv;
-            };
-            tsx = {
-              src = inputs.tree-sitter-typescript;
-            };
-            v = { location = "tree_sitter_v"; };
-            wast = {
-              location = "wast";
-              src = inputs.tree-sitter-wat;
-            };
-            wat = { location = "wat"; };
-            xml = { location = "xml"; };
+            aliasInputs = mapAttrs' (k: v: nameValuePair "tree-sitter-${k}" v.src) (
+              filterAttrs (_: v: hasAttr "src" v) grammarArgs
+            );
+            inputVersion =
+              input: "0.0.0+date=${builtins.substring 0 8 input.lastModifiedDate}_${input.shortRev}";
+            removeTsPrefix = s: removePrefix "tree-sitter-" s;
+            getGrammarArgs = k: if hasAttr k grammarArgs then grammarArgs.${k} else { };
+            grammars = mapAttrs'
+              (
+                k: input:
+                  nameValuePair k (
+                    pkgs:
+                    if hasAttr k pkgs.tree-sitter-grammars then
+                      pkgs.tree-sitter-grammars.${k}.overrideAttrs
+                        (_: {
+                          src = input;
+                          version = inputVersion input;
+                        })
+                    else
+                      pkgs.tree-sitter.buildGrammar (
+                        {
+                          language = k;
+                          src = input;
+                          version = inputVersion input;
+                        }
+                        // getGrammarArgs (removeTsPrefix k)
+                      )
+                  )
+              )
+              ((filterAttrs (k: _: hasPrefix "tree-sitter-" k) inputs) // aliasInputs);
+          in
+          grammars
+          // {
+            default =
+              { tree-sitter
+              , vimPlugins
+              , outputs'
+              , ...
+              }:
+              let
+                hasRev =
+                  p: rev:
+                  let
+                    k = p.src.rev;
+                    canReuse =
+                      x:
+                      hasPrefix (removeTsPrefix p.pname) (
+                        removeTsPrefix (builtins.replaceStrings [ "_" ] [ "-" ] x.name)
+                      );
+                  in
+                  hasAttr k rev && canReuse rev.${k};
+                revTs = listToAttrs (map (x: nameValuePair x.src.rev x) tree-sitter.allGrammars);
+                revVim = listToAttrs (
+                  map (x: nameValuePair x.src.rev x) vimPlugins.nvim-treesitter.passthru.allGrammars
+                );
+                selfGrammars = lib.attrValues (filterAttrs (k: v: hasPrefix "tree-sitter-" k) outputs'.packages);
+                finalGrammars = map
+                  (
+                    x:
+                    if hasRev x revTs then
+                      revTs.${x.src.rev}
+                    else if hasRev x revVim then
+                      revVim.${x.src.rev}
+                    else
+                      x
+                  )
+                  selfGrammars;
+              in
+              tree-sitter.withPlugins (
+                _: vimPlugins.nvim-treesitter.passthru.allGrammars ++ tree-sitter.allGrammars ++ finalGrammars
+              );
           };
-          aliasInputs = mapAttrs' (k: v: nameValuePair "tree-sitter-${k}" v.src) (filterAttrs (_: v: hasAttr "src" v) grammarArgs);
-          inputVersion = input: "0.0.0+date=${builtins.substring 0 8 input.lastModifiedDate}_${input.shortRev}";
-          removeTsPrefix = s: removePrefix "tree-sitter-" s;
-          getGrammarArgs = k: if hasAttr k grammarArgs then grammarArgs.${k} else { };
-          grammars = mapAttrs'
-            (k: input: nameValuePair k (pkgs:
-              if hasAttr k pkgs.tree-sitter-grammars then
-                pkgs.tree-sitter-grammars.${k}.overrideAttrs
-                  (_: {
-                    src = input;
-                    version = inputVersion input;
-                  })
-              else
-                pkgs.tree-sitter.buildGrammar ({
-                  language = k;
-                  src = input;
-                  version = inputVersion input;
-                } // getGrammarArgs (removeTsPrefix k))))
-            ((filterAttrs (k: _: hasPrefix "tree-sitter-" k) inputs) // aliasInputs);
-        in
-        grammars // {
-          default = { tree-sitter, vimPlugins, outputs', ... }:
-            let
-              hasRev = p: rev:
-                let
-                  k = p.src.rev;
-                  canReuse = x: hasPrefix (removeTsPrefix p.pname)
-                    (removeTsPrefix (builtins.replaceStrings [ "_" ] [ "-" ] x.name));
-                in
-                hasAttr k rev && canReuse rev.${k};
-              revTs = listToAttrs (map (x: nameValuePair x.src.rev x) tree-sitter.allGrammars);
-              revVim = listToAttrs (map (x: nameValuePair x.src.rev x) vimPlugins.nvim-treesitter.passthru.allGrammars);
-              selfGrammars = lib.attrValues (filterAttrs (k: v: hasPrefix "tree-sitter-" k) outputs'.packages);
-              finalGrammars = map
-                (x:
-                  if hasRev x revTs then revTs.${x.src.rev}
-                  else if hasRev x revVim then revVim.${x.src.rev}
-                  else x)
-                selfGrammars;
-            in
-            tree-sitter.withPlugins (_:
-              vimPlugins.nvim-treesitter.passthru.allGrammars ++
-              tree-sitter.allGrammars ++
-              finalGrammars);
-        };
-    });
+      }
+    );
 
   inputs = {
     flakelight = {
@@ -210,6 +319,10 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     tree-sitter-abap = {
       url = "github:mkoval1/tree-sitter-abap";
+      flake = false;
+    };
+    tree-sitter-COBOL = {
+      url = "github:yutaro-sakamoto/tree-sitter-cobol";
       flake = false;
     };
     tree-sitter-abl = {
@@ -268,6 +381,10 @@
       url = "github:aheber/tree-sitter-sfapex";
       flake = false;
     };
+    tree-sitter-apparmor = {
+      url = "github:Su3h7aM/tree-sitter-apparmor";
+      flake = false;
+    };
     tree-sitter-applesoft = {
       url = "github:dfgordon/tree-sitter-applesoft";
       flake = false;
@@ -286,6 +403,10 @@
     };
     tree-sitter-asciidoc = {
       url = "github:cathaysia/tree-sitter-asciidoc";
+      flake = false;
+    };
+    tree-sitter-asl = {
+      url = "github:crvdgc/tree-sitter-asl";
       flake = false;
     };
     tree-sitter-asm = {
@@ -450,6 +571,10 @@
     };
     tree-sitter-cfml = {
       url = "github:cfmleditor/tree-sitter-cfml";
+      flake = false;
+    };
+    tree-sitter-cgsql = {
+      url = "github:ricomariani/tree-sitter-cgsql";
       flake = false;
     };
     tree-sitter-chatito = {
@@ -704,6 +829,10 @@
       url = "github:elm-tooling/tree-sitter-elm";
       flake = false;
     };
+    tree-sitter-elpi = {
+      url = "github:dom-verity/tree-sitter-elpi";
+      flake = false;
+    };
     tree-sitter-elsa = {
       url = "github:glapa-grossklag/tree-sitter-elsa";
       flake = false;
@@ -746,6 +875,14 @@
     };
     tree-sitter-facility = {
       url = "github:FacilityApi/tree-sitter-facility";
+      flake = false;
+    };
+    tree-sitter-familymarkup = {
+      url = "github:redexp/tree-sitter-familymarkup";
+      flake = false;
+    };
+    tree-sitter-fasm = {
+      url = "github:wassup05/tree-sitter-fasm";
       flake = false;
     };
     tree-sitter-fastbuild = {
@@ -810,6 +947,10 @@
     };
     tree-sitter-fortran = {
       url = "github:stadelmanma/tree-sitter-fortran";
+      flake = false;
+    };
+    tree-sitter-fram = {
+      url = "github:Brychlikov/tree-sitter-fram";
       flake = false;
     };
     tree-sitter-fsh = {
@@ -944,6 +1085,10 @@
       url = "github:tree-sitter-grammars/tree-sitter-gpg-config";
       flake = false;
     };
+    tree-sitter-gpr = {
+      url = "github:brownts/tree-sitter-gpr";
+      flake = false;
+    };
     tree-sitter-gram = {
       url = "github:gram-data/tree-sitter-gram";
       flake = false;
@@ -998,6 +1143,10 @@
     };
     tree-sitter-heex = {
       url = "github:phoenixframework/tree-sitter-heex";
+      flake = false;
+    };
+    tree-sitter-hicad = {
+      url = "github:petrisch/tree-sitter-hicad";
       flake = false;
     };
     tree-sitter-hjson = {
@@ -1508,6 +1657,10 @@
       url = "github:314eter/tree-sitter-ocamllex";
       flake = false;
     };
+    tree-sitter-octizys = {
+      url = "github:Luis-omega/tree-sitter-octizys";
+      flake = false;
+    };
     tree-sitter-odin = {
       url = "github:tree-sitter-grammars/tree-sitter-odin";
       flake = false;
@@ -1596,6 +1749,10 @@
       url = "github:plume-lang/tree-sitter-plume";
       flake = false;
     };
+    tree-sitter-pluto = {
+      url = "github:mbekkomo/tree-sitter-pluto";
+      flake = false;
+    };
     tree-sitter-plymouth-script = {
       url = "github:liushuyu/tree-sitter-plymouth-script";
       flake = false;
@@ -1638,6 +1795,10 @@
     };
     tree-sitter-prisma = {
       url = "github:victorhqc/tree-sitter-prisma";
+      flake = false;
+    };
+    tree-sitter-prolog = {
+      url = "git+https://codeberg.org/foxy/tree-sitter-prolog";
       flake = false;
     };
     tree-sitter-promela = {
@@ -1730,6 +1891,10 @@
     };
     tree-sitter-rasi = {
       url = "github:Fymyte/tree-sitter-rasi";
+      flake = false;
+    };
+    tree-sitter-razor = {
+      url = "github:tris203/tree-sitter-razor";
       flake = false;
     };
     tree-sitter-rbs = {
@@ -2124,6 +2289,10 @@
       url = "github:tree-sitter-grammars/tree-sitter-toml";
       flake = false;
     };
+    tree-sitter-topas = {
+      url = "github:JamesDoingStuff/tree-sitter-topas";
+      flake = false;
+    };
     tree-sitter-tplspec = {
       url = "github:citorva/tree-sitter-tplspec";
       flake = false;
@@ -2296,6 +2465,10 @@
       url = "sourcehut:~jummit/tree-sitter-wren";
       flake = false;
     };
+    tree-sitter-x12 = {
+      url = "github:hugginsio/tree-sitter-x12";
+      flake = false;
+    };
     tree-sitter-xcompose = {
       url = "github:tree-sitter-grammars/tree-sitter-xcompose";
       flake = false;
@@ -2328,6 +2501,10 @@
       url = "github:Hubro/tree-sitter-yang";
       flake = false;
     };
+    tree-sitter-yap = {
+      url = "github:vscosta/tree-sitter-yap";
+      flake = false;
+    };
     tree-sitter-yasnippet = {
       url = "github:nverno/tree-sitter-yasnippet";
       flake = false;
@@ -2342,6 +2519,10 @@
     };
     tree-sitter-zeek = {
       url = "github:zeek/tree-sitter-zeek";
+      flake = false;
+    };
+    tree-sitter-zeque = {
+      url = "github:QnnOkabayashi/tree-sitter-zeque";
       flake = false;
     };
     tree-sitter-zig = {

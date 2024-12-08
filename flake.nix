@@ -237,6 +237,13 @@
           xml = {
             location = "xml";
           };
+          ziggy = {
+            location = "tree-sitter-ziggy";
+          };
+          ziggy-schema = {
+            location = "tree-sitter-ziggy-schema";
+            src = inputs.tree-sitter-ziggy;
+          };
         };
 
         aliasInputs = pipe grammarArgs [
@@ -384,6 +391,10 @@
     };
     tree-sitter-al = {
       url = "github:SShadowS/tree-sitter-al";
+      flake = false;
+    };
+    tree-sitter-alfa = {
+      url = "github:achrinza/tree-sitter-alfa";
       flake = false;
     };
     tree-sitter-amber = {
@@ -687,7 +698,7 @@
       flake = false;
     };
     tree-sitter-crystal = {
-      url = "github:crystal-lang-tools/tree-sitter";
+      url = "github:crystal-lang-tools/tree-sitter-crystal";
       flake = false;
     };
     tree-sitter-css = {
@@ -1038,6 +1049,10 @@
       url = "github:the-mikedavis/tree-sitter-git-config";
       flake = false;
     };
+    tree-sitter-git-merge-conflict = {
+      url = "github:pv-hernandez/tree-sitter-git-merge-conflict";
+      flake = false;
+    };
     tree-sitter-git-rebase = {
       url = "github:the-mikedavis/tree-sitter-git-rebase";
       flake = false;
@@ -1198,6 +1213,10 @@
       url = "github:urbit-pilled/tree-sitter-hoon";
       flake = false;
     };
+    tree-sitter-horn = {
+      url = "github:giannosch/tree-sitter-horn";
+      flake = false;
+    };
     tree-sitter-hosts = {
       url = "github:ath3/tree-sitter-hosts";
       flake = false;
@@ -1232,6 +1251,10 @@
     };
     tree-sitter-hyprlang = {
       url = "github:tree-sitter-grammars/tree-sitter-hyprlang";
+      flake = false;
+    };
+    tree-sitter-i3config = {
+      url = "github:abdellatif-temsamani/tree-sitter-i3config";
       flake = false;
     };
     tree-sitter-ic10 = {
@@ -1348,6 +1371,10 @@
     };
     tree-sitter-kanata = {
       url = "github:postsolar/tree-sitter-kanata";
+      flake = false;
+    };
+    tree-sitter-kanshi = {
+      url = "github:marcelarie/tree-sitter-kanshi";
       flake = false;
     };
     tree-sitter-kcl = {
@@ -1556,6 +1583,10 @@
     };
     tree-sitter-moonbit = {
       url = "github:moonbitlang/tree-sitter-moonbit";
+      flake = false;
+    };
+    tree-sitter-mor = {
+      url = "github:veqox/tree-sitter-mor";
       flake = false;
     };
     tree-sitter-moshell = {
@@ -1910,6 +1941,10 @@
       url = "github:6cdh/tree-sitter-racket";
       flake = false;
     };
+    tree-sitter-radiant = {
+      url = "github:mahgoh/tree-sitter-radiant";
+      flake = false;
+    };
     tree-sitter-ralph = {
       url = "github:alephium/tree-sitter-ralph";
       flake = false;
@@ -2096,6 +2131,10 @@
     };
     tree-sitter-snakemake = {
       url = "github:osthomas/tree-sitter-snakemake";
+      flake = false;
+    };
+    tree-sitter-snippet = {
+      url = "github:ribru17/tree-sitter-snippet";
       flake = false;
     };
     tree-sitter-solidity = {
@@ -2296,6 +2335,10 @@
     };
     tree-sitter-tlaplus = {
       url = "github:tlaplus-community/tree-sitter-tlaplus";
+      flake = false;
+    };
+    tree-sitter-tlb = {
+      url = "github:nickshatilo/tree-sitter-tlb";
       flake = false;
     };
     tree-sitter-tmux = {
@@ -2518,6 +2561,10 @@
       url = "github:Alexis-Lapierre/tree-sitter-xtc";
       flake = false;
     };
+    tree-sitter-yadl = {
+      url = "github:DeSc1998/tree-sitter-yadl";
+      flake = false;
+    };
     tree-sitter-yaml = {
       url = "github:tree-sitter-grammars/tree-sitter-yaml";
       flake = false;
@@ -2528,6 +2575,10 @@
     };
     tree-sitter-yap = {
       url = "github:vscosta/tree-sitter-yap";
+      flake = false;
+    };
+    tree-sitter-yaral = {
+      url = "github:MXfive/tree-sitter-yaral";
       flake = false;
     };
     tree-sitter-yasnippet = {
@@ -2552,6 +2603,10 @@
     };
     tree-sitter-zig = {
       url = "github:maxxnino/tree-sitter-zig";
+      flake = false;
+    };
+    tree-sitter-ziggy = {
+      url = "github:kristoff-it/ziggy";
       flake = false;
     };
     tree-sitter-zote = {

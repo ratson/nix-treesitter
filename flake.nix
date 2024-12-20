@@ -22,8 +22,11 @@
           pipe
           removePrefix
           ;
-        inherit (conflake.lib) withPrefix;
+        inherit (conflake.lib) mkVersion prefixAttrs;
         grammarArgs = {
+          alcha = {
+            generate = true;
+          };
           apex = {
             location = "apex";
           };
@@ -247,12 +250,10 @@
         };
 
         aliasInputs = pipe grammarArgs [
-          (filterAttrs (_: v: hasAttr "src" v))
-          (withPrefix "tree-sitter-")
+          (filterAttrs (_: hasAttr "src"))
+          (prefixAttrs "tree-sitter-")
           (mapAttrs (_: v: v.src))
         ];
-
-        inputVersion = input: "0.0.0+date=${substring 0 8 input.lastModifiedDate}_${input.shortRev}";
 
         hasTsPrefix = hasPrefix "tree-sitter-";
         removeTsPrefix = removePrefix "tree-sitter-";
@@ -268,7 +269,7 @@
             if hasAttr k pkgs.tree-sitter-grammars then
               pkgs.tree-sitter-grammars.${k}.overrideAttrs (_: {
                 src = input;
-                version = inputVersion input;
+                version = mkVersion input;
               })
             else
               pipe k [
@@ -279,7 +280,7 @@
                   {
                     language = k;
                     src = input;
-                    version = inputVersion input;
+                    version = mkVersion input;
                   }
                   // x
                 )
@@ -393,6 +394,10 @@
       url = "github:SShadowS/tree-sitter-al";
       flake = false;
     };
+    tree-sitter-alcha = {
+      url = "github:jpt13653903/tree-sitter-alcha";
+      flake = false;
+    };
     tree-sitter-alfa = {
       url = "github:achrinza/tree-sitter-alfa";
       flake = false;
@@ -471,6 +476,10 @@
     };
     tree-sitter-awk = {
       url = "github:Beaglefoot/tree-sitter-awk";
+      flake = false;
+    };
+    tree-sitter-bara = {
+      url = "github:Seungwuk98/tree-sitter-bara";
       flake = false;
     };
     tree-sitter-bash = {
@@ -639,6 +648,10 @@
     };
     tree-sitter-cloudflare = {
       url = "github:nfowl/tree-sitter-cloudflare";
+      flake = false;
+    };
+    tree-sitter-clue = {
+      url = "github:ClueLang/tree-sitter-clue";
       flake = false;
     };
     tree-sitter-cmake = {
@@ -1037,6 +1050,10 @@
       url = "sourcehut:~nbsp/tree-sitter-gemini";
       flake = false;
     };
+    tree-sitter-gemtext = {
+      url = "github:pebbe/tree-sitter-gemtext";
+      flake = false;
+    };
     tree-sitter-gherkin = {
       url = "github:binhtran432k/tree-sitter-gherkin";
       flake = false;
@@ -1241,6 +1258,10 @@
       url = "github:pfeiferj/tree-sitter-hurl";
       flake = false;
     };
+    tree-sitter-hygen-template = {
+      url = "github:Hdoc1509/tree-sitter-hygen-template";
+      flake = false;
+    };
     tree-sitter-hylo = {
       url = "github:natsukagami/tree-sitter-hylo";
       flake = false;
@@ -1377,6 +1398,10 @@
       url = "github:marcelarie/tree-sitter-kanshi";
       flake = false;
     };
+    tree-sitter-kappa = {
+      url = "github:Spyderisk/tree-sitter-kappa";
+      flake = false;
+    };
     tree-sitter-kcl = {
       url = "github:kcl-lang/tree-sitter-kcl";
       flake = false;
@@ -1399,6 +1424,10 @@
     };
     tree-sitter-kon = {
       url = "github:akonwi/tree-sitter-kon";
+      flake = false;
+    };
+    tree-sitter-kos = {
+      url = "github:kos-lang/tree-sitter-kos";
       flake = false;
     };
     tree-sitter-kotlin = {
@@ -1499,6 +1528,10 @@
     };
     tree-sitter-lura = {
       url = "github:aripiprazole/lura";
+      flake = false;
+    };
+    tree-sitter-lx = {
+      url = "github:curist/tree-sitter-lx";
       flake = false;
     };
     tree-sitter-m68k = {
@@ -2053,6 +2086,10 @@
       url = "github:tree-sitter/tree-sitter-rust";
       flake = false;
     };
+    tree-sitter-rvparam = {
+      url = "github:simonvic/tree-sitter-rvparam";
+      flake = false;
+    };
     tree-sitter-sasm = {
       url = "github:huntiep/tree-sitter-sasm";
       flake = false;
@@ -2215,6 +2252,10 @@
     };
     tree-sitter-structured-text = {
       url = "github:retrofit-st/tree-sitter-structured-text";
+      flake = false;
+    };
+    tree-sitter-structurizr = {
+      url = "github:josteink/tree-sitter-structurizr";
       flake = false;
     };
     tree-sitter-styled = {
@@ -2581,6 +2622,10 @@
       url = "github:MXfive/tree-sitter-yaral";
       flake = false;
     };
+    tree-sitter-yarnlock = {
+      url = "github:amaanq/tree-sitter-yarnlock";
+      flake = false;
+    };
     tree-sitter-yasnippet = {
       url = "github:nverno/tree-sitter-yasnippet";
       flake = false;
@@ -2615,10 +2660,6 @@
     };
     tree-sitter-zscript = {
       url = "github:dastrukar/tree-sitter-zscript";
-      flake = false;
-    };
-    tree-sitter-hygen-template = {
-      url = "github:Hdoc1509/tree-sitter-hygen-template";
       flake = false;
     };
     tree-sitter-zsh = {

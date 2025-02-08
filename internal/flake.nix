@@ -454,10 +454,6 @@
       url = "github:ColinKennedy/tree-sitter-disassembly";
       flake = false;
     };
-    tree-sitter-ditto = {
-      url = "github:ditto-lang/tree-sitter-ditto";
-      flake = false;
-    };
     tree-sitter-djot = {
       url = "github:treeman/tree-sitter-djot/split";
       flake = false;
@@ -942,10 +938,6 @@
       url = "github:tree-sitter-grammars/tree-sitter-hyprlang";
       flake = false;
     };
-    tree-sitter-i3config = {
-      url = "github:abdellatif-temsamani/tree-sitter-i3config";
-      flake = false;
-    };
     tree-sitter-ic10 = {
       url = "github:Xandaros/tree-sitter-ic10";
       flake = false;
@@ -1096,10 +1088,6 @@
     };
     tree-sitter-koka = {
       url = "github:mtoohey31/tree-sitter-koka";
-      flake = false;
-    };
-    tree-sitter-kon = {
-      url = "github:akonwi/tree-sitter-kon";
       flake = false;
     };
     tree-sitter-kos = {
@@ -1940,10 +1928,6 @@
     };
     tree-sitter-strings = {
       url = "github:uber/tree-sitter-strings";
-      flake = false;
-    };
-    tree-sitter-structured-text = {
-      url = "github:retrofit-st/tree-sitter-structured-text";
       flake = false;
     };
     tree-sitter-structurizr = {

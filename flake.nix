@@ -61,6 +61,9 @@
           cgsql = {
             generate = true;
           };
+          corth = {
+            generate = true;
+          };
           csv = {
             location = "csv";
           };
